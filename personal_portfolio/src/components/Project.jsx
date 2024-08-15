@@ -3,13 +3,12 @@ import Dhruv from '../assets/Dhruv.jpg'
 import { motion } from 'framer-motion'
 import Modal from './Modal'
 import full from '../assets/full.png'
-import bottom from '../assets/Intersect.png'
 
-const Experiences = () => {
+const Projects = () => {
 
     const experienceList = [
         {
-            img:  bottom,
+            img: full,
             title: 'Software Engineering Intern',
             company: 'inc',
             skills: ['React', 'Node.js', 'MongoDB'],
@@ -32,7 +31,7 @@ const Experiences = () => {
             },
         },
         {
-            img:  bottom,
+            img: full,
             title: 'Software Engineering Intern',
             company: 'inc',
             skills: ['React', 'Node.js', 'MongoDB'],
@@ -55,7 +54,7 @@ const Experiences = () => {
             },
         },
         {
-            img:  bottom,
+            img: full,
             title: 'Software Engineering Intern',
             company: 'inc',
             skills: ['React', 'Node.js', 'MongoDB'],
@@ -78,7 +77,7 @@ const Experiences = () => {
             },
         },
         {
-            img: bottom,
+            img: full,
             title: 'Software Engineering Intern',
             company: 'inc',
             skills: ['React', 'Node.js', 'MongoDB'],
@@ -101,7 +100,7 @@ const Experiences = () => {
             },
         },
         {
-            img:  bottom,
+            img: full,
             title: 'Software Engineering Intern',
             company: 'inc',
             skills: ['React', 'Node.js', 'MongoDB'],
@@ -185,7 +184,7 @@ const Experiences = () => {
         <>
             <main className='flex justify-center p-10 pb-16'>
                 <section className='flex-col flex max-w-screen-xl w-full items-center'>
-                    <motion.h1 variants={iconVariant(1/3)} initial={'hidden'} animate={'visible'} className='text-3xl md:text-5xl font-bold text-slate-400 border-b border-slate-800 w-full'><span className='text-blue-400'>My </span>Experience</motion.h1>
+                    <motion.h1 variants={iconVariant(1/3)} initial={'hidden'} animate={'visible'} className='text-3xl md:text-5xl font-bold text-slate-400 border-b border-slate-800 w-full'><span className='text-blue-400'>My</span> Projects</motion.h1>
                     
                     <motion.div variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} className='grid grid-cols-1 min-[450px]:grid-cols-2 max-w-screen-lg md:grid-cols-4 gap-2 pt-14' >
                         {
@@ -224,7 +223,7 @@ const Experiences = () => {
                                 <div className='flex gap-2 border-b w-full pb-6 border-slate-800'>
                                     <img src={selectedExperience.img} alt='company logo' className='w-[250px] h-[250px] rounded-t-xl hidden md:flex'/>
                                     <div className='flex flex-col px-10'>
-                                        <h2 className='font-thin text-xl '>Experience Information</h2>
+                                        <h2 className='font-thin text-xl '>Project Information</h2>
                                         <h1 className='font-bold tracking-wide pt-5 text-2xl text-slate-300'>{selectedExperience.description.title}</h1>
                                         <h1 className='font-extrabold py-4 text-slate-300'>{selectedExperience.description.company}</h1>
                                         <p className='font-thin italic text-sm'>{selectedExperience.description.date}</p>
@@ -257,4 +256,4 @@ const Experiences = () => {
     )
 }
 
-export default Experiences;
+export default Projects;

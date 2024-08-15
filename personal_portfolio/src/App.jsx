@@ -6,6 +6,10 @@ import Headroom from 'react-headroom'
 import About from './components/About'
 import Modal from './components/Modal'
 import Experience from './components/Experience'
+import Project from './components/Project'
+import Footer from './components/Footer'
+import Skills from './components/Skills'
+import Contact from './components/Contact'
 
 function App(){
 
@@ -24,19 +28,35 @@ function App(){
           <Navbar />
         </Headroom>
 
-        <div id="home">
-          <Hero />
-        </div>
+          <div id="home">
+            <Hero />
+          </div>
 
-        <div id='about-me'>
-          <About />
-        </div>
+          <div id='about-me'>
+            <About />
+          </div>
 
-        <div id='experiences'>
-          <Experience />
-        </div>
+          <div id='experiences'>
+            <Experience />
+          </div>
 
-        <Modal />
+          <div id='projects'>
+            <Project />
+          </div>
+
+          <div id='skills'>
+            <Skills />
+          </div>
+
+          <div id='contact'>
+            <Contact />
+          </div>
+
+          <div id="">
+            <Footer />
+          </div>
+
+          <Modal />
     </div>
   )
 

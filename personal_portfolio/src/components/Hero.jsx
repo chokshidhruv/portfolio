@@ -76,7 +76,7 @@ const Hero = () => {
 
                 </section>
                 <div className= 'flex z-50 text-center items-center justify-center p-4'>
-                    <Link to="about-me" activeClass="active" smooth={true} spy={true} duration={750} offset={50} onClick={closeMenu} className="bg-black animate-bounce text-blue-400 font-bold uppercase tracking-wider p-6 text-2xl rounded-full z-40 cursor-pointer"><IoIosArrowDown /></Link>
+                    <Link to="about-me" activeClass="active" smooth={true} spy={true} duration={750} offset={-50} onClick={closeMenu} className="bg-black animate-bounce text-blue-400 font-bold uppercase tracking-wider p-6 text-2xl rounded-full z-40 cursor-pointer"><IoIosArrowDown /></Link>
                 </div>
 
             </div>

@@ -11,7 +11,7 @@ const Navbar = () => {
     const navItems = [
         {
             id: 'About-me', 
-            title: <h1>About Me</h1>,
+            title: <h1>About</h1>,
             link: 'about-me'
         },
         {
@@ -25,9 +25,14 @@ const Navbar = () => {
             link: 'projects'
         },
         {
-            id: 'Resume', 
-            title: <h1>Resume</h1>,
-            link: 'resume'
+            id: 'Skills', 
+            title: <h1>Skills</h1>,
+            link: 'skills'
+        },
+        {
+            id: 'Contact', 
+            title: <h1>Contact</h1>,
+            link: 'contact'
         }
     ]
 
@@ -90,7 +95,7 @@ const Navbar = () => {
                         navItems.map((item, i) => (
                             <motion.li className="text-slate-300 font-medium hover:text-slate-400 active:text-slate-500 transition-[0.1]" key={item.id} variants={iconVariant(i/10)} initial="hidden" animate="visible" >
                             {/* <a href={item.link}> {item.title}</a> */}
-                            <Link to={item.link} activeClass="active" smooth={true} spy={true} duration={1000} offset={-100} onClick={closeMenu} className='cursor-pointer select-none'>{item.title}</Link>
+                            <Link to={item.link} activeClass="active" smooth={true} spy={true} duration={1000} offset={-55} onClick={closeMenu} className='cursor-pointer select-none'>{item.title}</Link>
                             </motion.li>
                         ))
                     }
