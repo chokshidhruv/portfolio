@@ -246,7 +246,7 @@ const Experiences = () => {
                             <section className='flex flex-col items-start px-10 text-slate-400'>
                                 <div className='flex gap-2 border-b w-full pb-6 border-slate-800'>
                                     <img src={selectedExperience.img} alt='company logo' className='w-[250px] h-[250px] rounded-t-xl hidden md:flex'/>
-                                    <div className='flex flex-col px-10'>
+                                    <div className='flex flex-col'>
                                         <h2 className='font-thin text-xl '>Experience Information</h2>
                                         <h1 className='font-bold tracking-wide pt-5 text-2xl text-slate-300'>{selectedExperience.description.title}</h1>
                                         <h1 className='font-extrabold py-4 text-slate-300'>{selectedExperience.description.company}</h1>

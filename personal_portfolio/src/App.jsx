@@ -13,9 +13,10 @@ import Contact from './components/Contact'
 
 function App(){
 
+
   return (
     
-    <div className='bg-slate-950 font-space text-slate-300 flex flex-col scroll-smooth'>
+    <div className={`bg-slate-950 font-space text-slate-400 flex flex-col scroll-smooth`}>
       
         <Headroom style={{
           height: '88px', 

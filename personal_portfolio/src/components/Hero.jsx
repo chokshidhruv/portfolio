@@ -9,6 +9,7 @@ import { FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from 'react-scroll'
+import fullImageSky from '../assets/Vector.png'
 
 
 const Hero = () => {
@@ -83,6 +84,8 @@ const Hero = () => {
 
 
             <motion.img style={{y: backgroundY}} src={fullImage} className='w-full h-screen bg-cover bg-bottom inset-0 z-0 absolute' alt="full" />
+            <motion.img style={{y: backgroundY}} src={fullImageSky} className='w-full h-[screen] bg-cover bg-bottom hidden inset-0 z-0 absolute' alt="full" />
+
 
             <img src={bottomImage} className='w-full h-screen bg-cover bg-bottom inset-0 z-20 absolute' alt="full" />
 
