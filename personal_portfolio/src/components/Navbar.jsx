@@ -113,7 +113,7 @@ const Navbar = () => {
 
       return (
         <Headroom><header className={`flex flex-col justify-center shadow-md shadow-slate-900`}>
-            <section className='flex flex-col justify-between px-10 py-8 md:-z-[9999] bg-slate-950 w-full items-center'>
+            <section className='flex flex-col justify-between px-10 py-8 bg-slate-950 w-full items-center'>
                 <div className='flex justify-between max-w-screen-2xl w-full z-500 items-center'>
 
                     <motion.h1 className='text-slate-300 uppercase tracking-wider font-normal z-[999] select-none' variants={iconVariant(1/4)} initial="hidden" animate="visible" href="#home" >Dhruv 

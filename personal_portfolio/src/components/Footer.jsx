@@ -4,6 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { motion } from "framer-motion";
 import {Link} from 'react-scroll'
+import Logo from '/public/logo-dhruv.png'
 
 const Footer = () => {
 
@@ -27,6 +28,8 @@ const Footer = () => {
                     <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}  className=" border border-slate-900 text-slate-400 font-bold uppercase tracking-wider p-2 rounded-lg cursor-pointer text-lg" href='#'><FaLinkedin /></motion.a>
                     <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}  className=" border border-slate-900 text-slate-400 font-bold uppercase tracking-wider p-2 rounded-lg cursor-pointer text-lg" href='#'><MdEmail /></motion.a>
                 </div>
+
+                <img src={Logo} alt="Dhruv Logo" className="w-52 h-36 select-none"></img>
 
                 <div className="py-1 pb-2">
                     <span className="text-xs text-slate-500">Handmade with React, Tailwind & Framer</span>
