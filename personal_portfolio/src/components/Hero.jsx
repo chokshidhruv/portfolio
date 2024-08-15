@@ -68,8 +68,8 @@ const Hero = () => {
                     
                     <motion.div className='flex z-50 text-center items-center justify-center gap-5 mb-8' variants={iconVariant(1/3)} initial={'hidden'} animate={'visible'}>
                         <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className="bg-blue-400 text-slate-950 font-bold uppercase tracking-wider p-3 rounded-full z-40 text-xl cursor-pointer" href='#'><FaGithub /></motion.a>
-                        <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className="bg-blue-400 text-slate-950 font-bold uppercase tracking-wider p-3 rounded-full z-40 text-xl cursor-pointer" href='#'><FaInstagram /></motion.a>
-                        <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className="bg-blue-400 text-slate-950 font-bold uppercase tracking-wider p-3 rounded-full z-40 text-xl cursor-pointer" href='#'><FaLinkedin /></motion.a>
+                        <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className="bg-blue-400 text-slate-950 font-bold uppercase tracking-wider p-3 rounded-full z-40 text-xl cursor-pointer" target="_blank"><FaInstagram /></motion.a>
+                        <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className="bg-blue-400 text-slate-950 font-bold uppercase tracking-wider p-3 rounded-full z-40 text-xl cursor-pointer" href="https://www.linkedin.com/in/chokshidhruv/" target='_blank'><FaLinkedin /></motion.a>
                         <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className="bg-blue-400 text-slate-950 font-bold uppercase tracking-wider p-3 rounded-full z-40 text-xl cursor-pointer" href='#'><MdEmail /></motion.a>
 
                     </motion.div>

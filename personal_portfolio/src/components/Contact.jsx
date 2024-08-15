@@ -15,11 +15,11 @@ const Contact = () => {
             <p className="max-w-lg text-center text-slate-400">If you have any questions or just want to say hi, feel free to reach me through my social platforms below:</p>
 
             <div className="grid md:flex max-w-screen-lg gap-4 pt-10 px-10 justify-center w-full">
-                <div className="grid md:flex gap-2 border px-4 py-5 bg-slate-900 items-center opacity-45 rounded-xl border-slate-800 md:w-1/2 w-full">
+                <div className="grid md:flex gap-2 border px-4 py-5 bg-slate-900 items-center opacity-70 rounded-xl border-slate-800 md:w-1/2 w-full">
                     <p className="text-lg font-semibold ">Email:</p>
                     <p className="text-slate-400 opacity-80">dhruvchokshi005@gmail.com</p>
                 </div>
-                <div className="flex gap-2 px-4 border py-5 items-center bg-slate-900 opacity-45 rounded-xl border-slate-800 md:w-1/2 w-full">
+                <div className="flex gap-2 px-4 border py-5 items-center bg-slate-900 opacity-70 rounded-xl border-slate-800 md:w-1/2 w-full">
                     <p className="text-lg font-semibold ">Social Profiles:</p>
                     <div className='flex justify-center py-2'>
                     <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}  className=" border border-slate-900 text-slate-400 font-bold uppercase tracking-wider p-2 rounded-lg cursor-pointer text-lg" href='#'><FaGithub /></motion.a>

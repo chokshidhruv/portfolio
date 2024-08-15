@@ -123,6 +123,29 @@ const Experiences = () => {
                 paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
             },
         },
+        {
+            img:  bottom,
+            title: 'Software Engineering Intern',
+            company: 'inc',
+            skills: ['React', 'Node.js', 'MongoDB'],
+            date: 'Month Year - Month Year',
+            description: {
+                title: 'Software Engineering Intern',
+                company: 'inc',
+                date: 'Month Year - Month Year',
+                linksToView: [
+                    {
+                    name: 'Github',
+                    url: 'https://Google.ca'
+                    },
+                    {
+                        name: 'Github',
+                        url: 'https://Google.ca'
+                    }
+                ],
+                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+            },
+        },
     ]
 
     const iconVariant = (duration) => ({
