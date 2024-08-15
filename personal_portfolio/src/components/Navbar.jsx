@@ -75,7 +75,7 @@ const Navbar = () => {
                 duration: 0
             },
             
-            // zIndex: -1,
+            zIndex: -1,
         }
     }
 
@@ -136,8 +136,8 @@ const Navbar = () => {
 
                 </div>
                 </section>
-                <section className='flex flex-col justify-between md:hidden px-10 md:-z-[9999] bg-slate-950 w-full items-center'>
-                <motion.div className='justify-between md:invisible flex max-w-screen-2xl w-full items-end md:hidden' variants={menuDrawer} initial={true} animate={open ? 'opened' : 'closed'}>
+                <section className='flex flex-col justify-between md:hidden px-10 bg-slate-950 w-full items-center'>
+                <motion.div className='justify-between flex max-w-screen-2xl w-full items-end' variants={menuDrawer} initial={true} animate={open ? 'opened' : 'closed'}>
                         <motion.ul className=" flex-col justify-start flex text-left -mt-2 pb-8">
                         {
                             navItems.map((item, i) => (
