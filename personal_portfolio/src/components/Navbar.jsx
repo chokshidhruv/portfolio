@@ -117,7 +117,7 @@ const Navbar = () => {
                 <div className='flex justify-between max-w-screen-2xl w-full z-500 items-center'>
 
                     <motion.h1 className='text-slate-300 uppercase tracking-wider font-normal z-[999] select-none' variants={iconVariant(1/4)} initial="hidden" animate="visible" href="#home" >Dhruv 
-                    <Link to={'home'} activeClass="active" smooth={true} spy={true} duration={1000} offset={0} onClick={closeMenu} className='text-blue-300 font-bold tracking-wider cursor-pointer hover:font-extrabold hover:text-blue-400 active:text-sky-500 transition-[0.1]'> Chokshi</Link></motion.h1>
+                    <Link to={'home'} activeClass="active" smooth={true} spy={true} duration={1000} offset={0} onClick={closeMenu} className='text-blue-400 font-bold tracking-wider cursor-pointer hover:font-extrabold hover:text-blue-500 active:text-blue-400 transition-[0.1]'> Chokshi</Link></motion.h1>
                 
                     <ul className="md:flex gap-7 hidden">
                     {

@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <footer className="w-full bg-gradient-to-b border-t border-slate-900 from-slate-950 to-slate-900 py-10 z-[9999] px-10">
             <div className="flex flex-col items-center text-sm text-center">
-                <h1 className='text-slate-400 uppercase tracking-wider font-normal select-none text-[1rem]' href="#home" >Dhruv <span className='text-blue-300 font-bold tracking-wider cursor-pointer hover:font-extrabold hover:text-blue-400 active:text-sky-500 transition-[0.1]'> Chokshi</span></h1>
+                <Link to={'home'} activeClass="active" smooth={true} spy={true} duration={1000} offset={0} className='text-slate-400 uppercase tracking-wider font-normal select-none text-[1rem]' href="#home" >Dhruv <span className='text-blue-400 font-bold tracking-wider cursor-pointer hover:font-extrabold hover:text-blue-500 active:text-blue-400 transition-[0.1]'> Chokshi</span></Link>
 
         
 
