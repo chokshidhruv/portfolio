@@ -149,12 +149,12 @@ const Experiences = () => {
     const closeModal = () => {
         setSelectedExperience(null);
     }
-    
+
     React.useEffect(() => {
         if (selectedExperience) {
             // Disable scrolling
             document.body.style.overflow = 'hidden';
-            document.body.style.position = 'fixed';
+            document.body.style.position = 'absolute';
             document.body.style.width = '100%';
         } else {
             // Re-enable scrolling
