@@ -100,6 +100,29 @@ const Projects = () => {
                 paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
             },
         },
+        {
+            img: full,
+            title: 'Software Engineering Intern',
+            company: 'inc',
+            skills: ['React', 'Node.js', 'MongoDB'],
+            date: 'Month Year - Month Year',
+            description: {
+                title: 'Software Engineering Intern',
+                company: 'inc',
+                date: 'Month Year - Month Year',
+                linksToView: [
+                    {
+                    name: 'Github',
+                    url: 'https://Google.ca'
+                    },
+                    {
+                        name: 'Github',
+                        url: 'https://Google.ca'
+                    }
+                ],
+                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+            },
+        },
     ]
 
     const iconVariant = (duration) => ({
@@ -134,6 +157,8 @@ const Projects = () => {
 
     const [selectedExperience, setSelectedExperience] = React.useState(null);
 
+    const [showAll, setShowAll] = React.useState(false);
+
     const openModal = (exp) => {
         setSelectedExperience(exp);
     }
@@ -166,7 +191,7 @@ const Projects = () => {
                     
                     <motion.div variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} className='grid grid-cols-1 min-[450px]:grid-cols-2 max-w-screen-lg md:grid-cols-4 gap-2 pt-14' >
                         {
-                            experienceList.map((exp, index) => (
+                            experienceList.slice(0, showAll ? experienceList.lenth : 4).map((exp, index) => (
                                 <div key={index} className='p-2 cursor-pointer'>
                                     <motion.div 
                                         whileHover={{ scale: 1.05 }} 
@@ -194,6 +219,12 @@ const Projects = () => {
                             ))
                         }
                     </motion.div>
+
+                    {experienceList.length > 4 && (
+                        <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className='mt-8 px-4 pt-2 text-blue-400 bg-slate-950 rounded-full font-semibold' onClick={ () => setShowAll(!showAll)}>
+                            {showAll ? 'View Less...' : 'View More...'}
+                        </motion.button>
+                    )}
 
                     {selectedExperience && (
                         <Modal isVisible={true} onClose={closeModal}>

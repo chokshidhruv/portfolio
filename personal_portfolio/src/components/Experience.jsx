@@ -108,6 +108,31 @@ const Experiences = () => {
                 paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
             },
         },
+        {
+            img:  MacLogo,
+            title: 'Residence Ambassador',
+            company: 'McMaster',
+            skills: ['Communication'],
+            date: 'August 2023 - April 2024',
+            loc: 'McMaster University',
+            description: {
+                title: 'Residence Ambassador',
+                company: 'McMaster University - Housing and Conference Services',
+                date: 'Month Year - Month Year',
+                linksToView: [
+                    {
+                    name: 'Github',
+                    url: 'https://Google.ca'
+                    },
+                    {
+                        name: 'Github',
+                        url: 'https://Google.ca'
+                    }
+                ],
+                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+            },
+        },
+        
     ]
 
     const iconVariant = (duration) => ({
@@ -141,6 +166,7 @@ const Experiences = () => {
       })
 
     const [selectedExperience, setSelectedExperience] = React.useState(null);
+    const [showAll, setShowAll] = React.useState(false);
 
     const openModal = (exp) => {
         setSelectedExperience(exp);
@@ -178,7 +204,7 @@ const Experiences = () => {
                     
                     <motion.div variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} className='grid grid-cols-1 min-[450px]:grid-cols-2 max-w-screen-lg md:grid-cols-4 gap-2 pt-14' >
                         {
-                            experienceList.map((exp, index) => (
+                            experienceList.slice(0, showAll ? experienceList.length : 4).map((exp, index) => (
                                 <div key={index} className='p-2 cursor-pointer'>
                                     <motion.div 
                                         whileHover={{ scale: 1.05 }} 
@@ -190,7 +216,7 @@ const Experiences = () => {
                                         }}
                                         onClick={() => openModal(exp)}
                                     >
-                                        <img src={exp.img} alt='company logo' className='px-3 w-full h-72 md:h-56 rounded-t-xl'/>
+                                        <img src={exp.img} alt='company logo' className='px-3 w-full h-72 md:h-56 rounded-t-xl select-none'/>
                                         <p className='text-lg font-bold text-slate-400 px-4 w-full h-10 pt-3'>{exp.company}</p>
                                         <p className='text-sm font-semibold text-slate-500 px-4 py-2'>{exp.title}</p>
                                         <p className='text-xs font-semibold text-slate-500 italic px-4'>{exp.date}</p>
@@ -207,11 +233,17 @@ const Experiences = () => {
                         }
                     </motion.div>
 
+                    {experienceList.length > 4 && (
+                        <motion.button className='mt-8 px-4 pt-2 text-blue-400 bg-slate-950 rounded-full font-semibold' whileHover={ {scale: 1.1} } whileTap={ {scale: 0.9} } onClick={() => setShowAll(!showAll)}>
+                            {showAll ? "View Less..." : "View More..."}
+                        </motion.button>
+                    )}
+
                     {selectedExperience && (
                         <Modal isVisible={true} onClose={closeModal}>
                             <section className='flex flex-col items-start px-10 text-slate-400'>
                                 <div className='flex gap-2 border-b w-full pb-6 items-center border-slate-800'>
-                                    <img src={selectedExperience.img} alt='company logo' className='w-[250px] h-[250px] rounded-t-xl hidden md:flex'/>
+                                    <img src={selectedExperience.img} alt='company logo' className='w-[250px] h-[250px] rounded-t-xl hidden md:flex select-none'/>
                                     <div className='flex flex-col md:px-5'>
                                         <h2 className='font-thin text-xl '>Experience Information</h2>
                                         <h1 className='font-bold tracking-wide pt-2 text-2xl text-slate-300'>{selectedExperience.description.title}</h1>
