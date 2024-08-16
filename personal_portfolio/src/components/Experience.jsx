@@ -149,22 +149,26 @@ const Experiences = () => {
     const closeModal = () => {
         setSelectedExperience(null);
     }
-
-        // Use effect to handle body scroll
-        React.useEffect(() => {
-            if (selectedExperience) {
-                // Disable scrolling
-                document.body.style.overflow = 'hidden';
-            } else {
-                // Re-enable scrolling
-                document.body.style.overflow = 'auto';
-            }
     
-            // Cleanup when component unmounts
-            return () => {
-                document.body.style.overflow = 'auto';
-            }
-        }, [selectedExperience]);
+    React.useEffect(() => {
+        if (selectedExperience) {
+            // Disable scrolling
+            document.body.style.overflow = 'hidden';
+            document.body.style.position = 'fixed';
+            document.body.style.width = '100%';
+        } else {
+            // Re-enable scrolling
+            document.body.style.overflow = 'auto';
+            document.body.style.position = 'static';
+        }
+    
+        // Cleanup when component unmounts
+        return () => {
+            document.body.style.overflow = 'auto';
+            document.body.style.position = 'static';
+        }
+    }, [selectedExperience]);
+    
 
     return (
         <>
@@ -186,7 +190,7 @@ const Experiences = () => {
                                         }}
                                         onClick={() => openModal(exp)}
                                     >
-                                        <img src={exp.img} alt='company logo' className='px-3 w-full h-56 rounded-t-xl'/>
+                                        <img src={exp.img} alt='company logo' className='px-3 w-full h-72 md:h-56 rounded-t-xl'/>
                                         <p className='text-lg font-bold text-slate-400 px-4 w-full h-10 pt-3'>{exp.company}</p>
                                         <p className='text-sm font-semibold text-slate-500 px-4 py-2'>{exp.title}</p>
                                         <p className='text-xs font-semibold text-slate-500 italic px-4'>{exp.date}</p>

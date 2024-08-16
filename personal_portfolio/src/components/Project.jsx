@@ -178,7 +178,7 @@ const Projects = () => {
                                         }}
                                         onClick={() => openModal(exp)}
                                     >
-                                        <img src={exp.img} alt='company logo' className='px-3 w-full h-56 rounded-t-xl'/>
+                                        <img src={exp.img} alt='company logo' className='px-3 w-full h-72 md:h-56 rounded-t-xl'/>
                                         <p className='text-lg font-bold text-slate-400 px-4 w-full h-10 pt-3'>{exp.company}</p>
                                         <p className='text-sm font-semibold text-slate-500 px-4 py-2'>{exp.title}</p>
                                         <p className='text-xs font-semibold text-slate-500 italic px-4'>{exp.date}</p>
