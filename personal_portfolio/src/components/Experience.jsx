@@ -4,19 +4,48 @@ import { motion } from 'framer-motion'
 import Modal from './Modal'
 import full from '../assets/full.png'
 import bottom from '../assets/Intersect.png'
+import LdcLogo from '../assets/ldcLogo.png'
+import SesLogo from '../assets/sesLogo.png'
+import MesLogo from '../assets/mesLogo.png'
+import MacLogo from '../assets/mcmasterLogo.png'
 
 const Experiences = () => {
 
     const experienceList = [
         {
-            img:  bottom,
-            title: 'Software Engineering Intern',
-            company: 'inc',
-            skills: ['React', 'Node.js', 'MongoDB'],
-            date: 'Month Year - Month Year',
+            img:  LdcLogo,
+            title: 'Website Developer Lead',
+            company: 'LDC',
+            skills: ['React', 'Tailwind', 'Framer'],
+            date: 'April 2024 - Present',
+            loc: 'McMaster University',
             description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
+                title: 'Website Developer Lead',
+                company: 'Leadership Development Conference - McMaster Engineering Society',
+                date: 'Month Year - Month Year',
+                linksToView: [
+                    {
+                    name: 'View Website',
+                    url: 'https://Google.ca'
+                    },
+                    {
+                        name: 'Github',
+                        url: 'https://Google.ca'
+                    }
+                ],
+                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+            },
+        },
+        {
+            img:  SesLogo,
+            title: 'Wesite Developer',
+            company: 'SES',
+            skills: ['Tailwind', 'Astro.js'],
+            date: 'April 2024 - Present',
+            loc: 'McMaster University',
+            description: {
+                title: 'Website Developer',
+                company: 'Software Engineering Society',
                 date: 'Month Year - Month Year',
                 linksToView: [
                     {
@@ -32,14 +61,15 @@ const Experiences = () => {
             },
         },
         {
-            img:  bottom,
-            title: 'Software Engineering Intern',
-            company: 'inc',
-            skills: ['React', 'Node.js', 'MongoDB'],
-            date: 'Month Year - Month Year',
+            img:  MesLogo,
+            title: 'Leadership Development Conference Coordinator',
+            company: 'MES',
+            skills: ['Leadership', 'Teamwork'],
+            date: 'April 2024 - Present',
+            loc: 'McMaster University',
             description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
+                title: 'Leadership Development Conference Coordinator',
+                company: 'McMaster Engineering Society',
                 date: 'Month Year - Month Year',
                 linksToView: [
                     {
@@ -55,83 +85,15 @@ const Experiences = () => {
             },
         },
         {
-            img:  bottom,
-            title: 'Software Engineering Intern',
-            company: 'inc',
-            skills: ['React', 'Node.js', 'MongoDB'],
-            date: 'Month Year - Month Year',
+            img:  MacLogo,
+            title: 'Residence Ambassador',
+            company: 'McMaster',
+            skills: ['Communication'],
+            date: 'August 2023 - April 2024',
+            loc: 'McMaster University',
             description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
-                date: 'Month Year - Month Year',
-                linksToView: [
-                    {
-                    name: 'Github',
-                    url: 'https://Google.ca'
-                    },
-                    {
-                        name: 'Github',
-                        url: 'https://Google.ca'
-                    }
-                ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
-            },
-        },
-        {
-            img: bottom,
-            title: 'Software Engineering Intern',
-            company: 'inc',
-            skills: ['React', 'Node.js', 'MongoDB'],
-            date: 'Month Year - Month Year',
-            description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
-                date: 'Month Year - Month Year',
-                linksToView: [
-                    {
-                    name: 'Github',
-                    url: 'https://Google.ca'
-                    },
-                    {
-                        name: 'Github',
-                        url: 'https://Google.ca'
-                    }
-                ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
-            },
-        },
-        {
-            img:  bottom,
-            title: 'Software Engineering Intern',
-            company: 'inc',
-            skills: ['React', 'Node.js', 'MongoDB'],
-            date: 'Month Year - Month Year',
-            description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
-                date: 'Month Year - Month Year',
-                linksToView: [
-                    {
-                    name: 'Github',
-                    url: 'https://Google.ca'
-                    },
-                    {
-                        name: 'Github',
-                        url: 'https://Google.ca'
-                    }
-                ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
-            },
-        },
-        {
-            img:  bottom,
-            title: 'Software Engineering Intern',
-            company: 'inc',
-            skills: ['React', 'Node.js', 'MongoDB'],
-            date: 'Month Year - Month Year',
-            description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
+                title: 'Residence Ambassador',
+                company: 'McMaster University - Housing and Conference Services',
                 date: 'Month Year - Month Year',
                 linksToView: [
                     {
@@ -224,8 +186,8 @@ const Experiences = () => {
                                         }}
                                         onClick={() => openModal(exp)}
                                     >
-                                        <img src={exp.img} alt='company logo' className='px-3 w-full h-60 rounded-t-xl'/>
-                                        <p className='text-xl font-bold text-slate-400 px-4 w-full h-10 pt-3'>{exp.company}</p>
+                                        <img src={exp.img} alt='company logo' className='px-3 w-full h-56 rounded-t-xl'/>
+                                        <p className='text-lg font-bold text-slate-400 px-4 w-full h-10 pt-3'>{exp.company}</p>
                                         <p className='text-sm font-semibold text-slate-500 px-4 py-2'>{exp.title}</p>
                                         <p className='text-xs font-semibold text-slate-500 italic px-4'>{exp.date}</p>
                                         <div className='flex justify-start px-3 pt-5 gap-2'>
@@ -244,13 +206,14 @@ const Experiences = () => {
                     {selectedExperience && (
                         <Modal isVisible={true} onClose={closeModal}>
                             <section className='flex flex-col items-start px-10 text-slate-400'>
-                                <div className='flex gap-2 border-b w-full pb-6 border-slate-800'>
+                                <div className='flex gap-2 border-b w-full pb-6 items-center border-slate-800'>
                                     <img src={selectedExperience.img} alt='company logo' className='w-[250px] h-[250px] rounded-t-xl hidden md:flex'/>
-                                    <div className='flex flex-col'>
+                                    <div className='flex flex-col md:px-5'>
                                         <h2 className='font-thin text-xl '>Experience Information</h2>
-                                        <h1 className='font-bold tracking-wide pt-5 text-2xl text-slate-300'>{selectedExperience.description.title}</h1>
-                                        <h1 className='font-extrabold py-4 text-slate-300'>{selectedExperience.description.company}</h1>
-                                        <p className='font-thin italic text-sm'>{selectedExperience.description.date}</p>
+                                        <h1 className='font-bold tracking-wide pt-2 text-2xl text-slate-300'>{selectedExperience.description.title}</h1>
+                                        <h1 className='font-extrabold py-3 text-slate-300'>{selectedExperience.description.company}</h1>
+                                        <p className='font-thin italic pb-1 text-sm'>{selectedExperience.loc}</p>
+                                        <p className='font-thin italic text-sm'>{selectedExperience.date}</p>
                                         
                                         <div className='flex flex-wrap gap-2 pt-5'>
                                             {selectedExperience.skills.map((skill, index) => (
