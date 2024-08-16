@@ -24,6 +24,25 @@ const Hero = () => {
     const [click, setClick] = React.useState(false);
     const closeMenu = () => setClick(false);
 
+    const Links = [
+        {
+            name: 'Github',
+            url: 'https://github.com/chokshidhruv'
+        },
+        {
+            name: 'Instagram',
+            url: 'https://www.instagram.com/dhruvc05/'
+        },
+        {
+            name: 'Linkedin',
+            url: 'https://www.linkedin.com/in/chokshidhruv/'
+        },
+        {
+            name: 'Email',
+            url: 'mailto:dhruvchokshi005@gmail.com'
+        }
+    ];
+
     const iconVariant = (duration) => ({
         
         hidden:{
@@ -61,17 +80,31 @@ const Hero = () => {
         <div ref={ref} className="w-[full] h-screen overflow-hidden relative grid place-items-center px-8 select-none" id='home'>
 
             <div className='text-center pt-10'>
-                <motion.p style={{y: text2Y}} variants={iconVariant(1/3)} initial={'hiddenY'} animate={'visible'} className="font-bold text-xl relative z-10 text-blue-300 uppercase">Hello! I'm </motion.p>
+                <motion.p style={{y: text2Y}} variants={iconVariant(1/2)} initial={'hiddenOpp'} animate={'visible'} className="font-bold text-xl relative z-10 text-blue-300 uppercase">{`Hello! I'm`} </motion.p>
                 <motion.h1 style={{y: textY}} className="font-bold text-5xl md:text-8xl relative pb-4 pt-2 z-10" ><span className='text-blue-400' style={{textShadow:' 0rem 0.04rem #f8fcf9'}}
                 >Dhruv Chokshi</span></motion.h1>
-                <motion.p style={{y: text2Y}} className="font-bold text-xl md:text-2xl relative z-10 mb-24 text-blue-300 uppercase">A Software Engineering Student </motion.p>
+                <motion.p style={{y: text2Y}} variants={iconVariant(1/2)} initial={'hiddenOpp'} animate={'visible'} className="font-bold text-xl md:text-2xl relative z-10 mb-24 text-blue-300 uppercase">A Software Engineering Student </motion.p>
                 <section className='grid gap-y-4 justify-center'>
                     
-                    <motion.div className='flex z-50 text-center items-center justify-center gap-5 mb-8' variants={iconVariant(1/3)} initial={'hidden'} animate={'visible'}>
-                        <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className="bg-blue-400 text-slate-950 font-bold uppercase tracking-wider p-3 rounded-full z-40 text-xl cursor-pointer" href='#'><FaGithub /></motion.a>
-                        <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className="bg-blue-400 text-slate-950 font-bold uppercase tracking-wider p-3 rounded-full z-40 text-xl cursor-pointer" target="_blank"><FaInstagram /></motion.a>
-                        <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className="bg-blue-400 text-slate-950 font-bold uppercase tracking-wider p-3 rounded-full z-40 text-xl cursor-pointer" href="https://www.linkedin.com/in/chokshidhruv/" target='_blank'><FaLinkedin /></motion.a>
-                        <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className="bg-blue-400 text-slate-950 font-bold uppercase tracking-wider p-3 rounded-full z-40 text-xl cursor-pointer" href='#'><MdEmail /></motion.a>
+                    <motion.div className='flex z-50 text-center items-center justify-center gap-5 mb-8' variants={iconVariant(1/2)} initial={'hidden'} animate={'visible'}>
+
+                    {Links.map((link, index) => (
+                                <motion.a
+                                    key={index}
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className="bg-blue-400 text-slate-950 font-bold uppercase tracking-wider p-3 rounded-full z-40 text-xl cursor-pointer"
+                                    href={link.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {link.name === 'Github' && <FaGithub />}
+                                    {link.name === 'Instagram' && <FaInstagram />}
+                                    {link.name === 'Linkedin' && <FaLinkedin />}
+                                    {link.name === 'Email' && <MdEmail />}
+                                </motion.a>
+                                ))}
+
 
                     </motion.div>
 

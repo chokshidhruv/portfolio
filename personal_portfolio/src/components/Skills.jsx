@@ -37,7 +37,7 @@ const Languages = [
     { Icon: JS, alt: 'JS' },
     { Icon: Python, alt: 'Python' },
     { Icon: CPP, alt: 'CPP' },
-    { Icon: Java, alt: 'Java' }
+    { Icon: Java, alt: 'Java' },
 ];
 
 const FramLib = [
@@ -75,56 +75,86 @@ const Other = [
 
 ]
 
+const iconVariant = (duration) => ({
+        
+    hidden:{
+        y: 0,
+        opacity: 0,
+        scale: 1,
+        x: -500,
+    },
+    hiddenOpp:{
+        y: 0,
+        opacity: 0,
+        scale: 1,
+        x: 500,
+    },
+    hiddenY:{
+        y: -500,
+        opacity: 0,
+    },
+    visible:{
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration
+        },
+        scale: 1,
+        x:0
+    }
+
+  })
+
 const Skills = () => {
     return (
         <div className="flex flex-col justify-center items-center px-10 gap-4 pt-10 pb-16">
             <div className="flex w-full max-w-screen-xl justify-between border-b border-slate-800"> 
-                <h1 className="md:text-5xl text-3xl font-bold text-slate-400"><span className="text-blue-400">My</span> Skills</h1>
+                <motion.h1 className="md:text-5xl text-3xl font-bold text-slate-400" variants={iconVariant(1/3)} initial={'hidden'} animate={'visible'}><span className="text-blue-400">My</span> Skills</motion.h1>
             </div>
 
-            <div className="grid place-items-start lg:flex w-full max-w-screen-lg py-5 mt-10 gap-4 px-4 bg-slate-900 opacity-75 rounded-xl border-slate-800">
+            <div className="grid place-items-start lg:flex w-full max-w-screen-lg py-5 items-center mt-10 gap-4 px-4 bg-slate-900 opacity-75 rounded-xl border-slate-800">
                 <p className="sm:text-2xl text-xl font-semibold text-slate-400">Languages:</p>
                 <div whileHover={{scale: 1.05}} whileTap={{scale: 1.00}} className="grid grid-cols-4 xs:grid-cols-9 md:grid-cols-8 md:flex gap-5 sm:gap-10 place-items-center text-center justify-center ">
                     {Languages.map((lang, index) => {
                         const Icon = lang.Icon;
                         return (
-                            <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className='select-none'><Icon key={index} className="text-4xl flex font-normal text-blue-400" /></motion.div>
+                            <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} className='select-none'><Icon key={index} className="text-4xl flex font-normal text-blue-400" /></motion.div>
                         )
                     })}
                 </div>
             </div>
 
-            <div className="grid place-items-start lg:flex w-full max-w-screen-lg py-5 gap-4 px-4 bg-slate-900 opacity-75 rounded-xl border-slate-800">
+            <div className="grid place-items-start lg:flex w-full max-w-screen-lg py-5 gap-4 px-4 items-center bg-slate-900 opacity-75 rounded-xl border-slate-800">
                 <p className="sm:text-2xl text-xl font-semibold text-slate-400">Frameworks/Libraries:</p>
                 <div className="grid grid-cols-5 xs:grid-cols-9 md:flex gap-5 sm:gap-10 place-items-center text-center justify-center">
                     {FramLib.map((framlib, index) => {
                         const Icon = framlib.Icon;
                         return (
-                            <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className='select-none'><Icon key={index} className="text-4xl flex font-normal text-blue-400" /></motion.div>
+                            <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} className='select-none'><Icon key={index} className="text-4xl flex font-normal text-blue-400" /></motion.div>
                         )
                     })}
                 </div>
             </div>
 
-            <div className="grid place-items-start lg:flex w-full max-w-screen-lg py-5 gap-4 px-4 bg-slate-900 opacity-75 rounded-xl border-slate-800">
+            <div className="grid place-items-start lg:flex w-full max-w-screen-lg py-5 gap-4 px-4 items-center bg-slate-900 opacity-75 rounded-xl border-slate-800">
                 <p className="sm:text-2xl text-xl font-semibold text-slate-400">IDE:</p>
                 <div className="grid grid-cols-5 xs:grid-cols-9 md:flex gap-5 sm:gap-10 place-items-center text-center justify-center">
                     {IDE.map((ide, index) => {
                         const Icon = ide.Icon;
                         return (
-                            <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className='select-none'><Icon key={index} className="text-4xl flex font-normal text-blue-400" /></motion.div>
+                            <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} className='select-none'><Icon key={index} className="text-4xl flex font-normal text-blue-400" /></motion.div>
                         )
                     })}
                 </div>
             </div>
 
-            <div className="grid place-items-start lg:flex w-full max-w-screen-lg py-5 gap-4 px-4 bg-slate-900 opacity-75 rounded-xl border-slate-800">
+            <div className="grid place-items-start lg:flex w-full max-w-screen-lg py-5 gap-4 px-4 items-center bg-slate-900 opacity-75 rounded-xl border-slate-800">
                 <p className="sm:text-2xl text-xl font-semibold text-slate-400">Other:</p>
                 <div className="grid grid-cols-5 xs:grid-cols-9 md:flex gap-5 sm:gap-10 place-items-center text-center justify-center">
                     {Other.map((other, index) => {
                         const Icon = other.Icon;
                         return (
-                            <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className='select-none'><Icon key={index} className="text-4xl flex font-normal text-blue-400" /></motion.div>
+                            <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} className='select-none'><Icon key={index} className="text-4xl flex font-normal text-blue-400" /></motion.div>
                         )
                     })}
                 </div>

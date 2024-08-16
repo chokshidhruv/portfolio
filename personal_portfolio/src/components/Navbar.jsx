@@ -79,30 +79,6 @@ const Navbar = () => {
         }
     }
 
-    // const menuDrawer = {
-    //     opened: {
-    //       top: 0,
-    //       width: '100%',
-    //       height: '100vh',
-    //       transition: {
-    //         duration: 0.3,
-    //       },
-    //       display: 'flex',
-    //       zIndex: 1000,
-    //     },
-    //     closed: {
-    //       top: '-100vh',
-    //       width: '100%',
-    //       height: '0',
-    //       transition: {
-    //         duration: 0.3,
-    //       },
-    //       display: 'none',
-    //       zIndex: -1,
-    //     },
-    //   };
-      
-
 
 
     const [click, setClick] = React.useState(false); 
@@ -132,8 +108,6 @@ const Navbar = () => {
 
                     <motion.button className="flex md:hidden text-2xl" initial={true} animate={open ? 'opened' : 'closed'} onClick={() => setOpen((open) => !open)}><IoMenu /></motion.button>
                     
-                    {/* <button onClick={toggleDarkMode} className=' dark:bg-blue-400 w-16 h-16 bottom-16 right-16 bg-red-400'>Yo</button> */}
-
                 </div>
                 </section>
                 <section className='flex flex-col justify-between md:hidden px-10 bg-slate-950 w-full items-center'>
@@ -143,7 +117,7 @@ const Navbar = () => {
                             navItems.map((item, i) => (
                                 <motion.li className="text-slate-300 font-medium py-2 hover:text-slate-400 active:text-slate-500" key={item.id} variants={iconVariant(i/3)} initial="hidden" animate="visible" >
                                 {/* <a href={item.link}> {item.title}</a> */}
-                                <Link to={item.link} activeClass="active" smooth={true} spy={true} duration={1000} offset={50} onClick={closeMenu} className='cursor-pointer select-none'>{item.title}</Link>
+                                <Link to={item.link} activeClass="active" smooth={true} spy={true} duration={1000} offset={-30} onClick={closeMenu} className='cursor-pointer select-none'>{item.title}</Link>
                                 </motion.li>
                             ))
                         }

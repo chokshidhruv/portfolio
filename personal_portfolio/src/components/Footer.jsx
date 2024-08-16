@@ -8,6 +8,26 @@ import Logo from '/public/logo-dhruv.png'
 
 const Footer = () => {
 
+    const Links = [
+        {
+            name: 'Github',
+            url: 'https://github.com/chokshidhruv'
+        },
+        {
+            name: 'Instagram',
+            url: 'https://www.instagram.com/dhruvc05/'
+        },
+        {
+            name: 'Linkedin',
+            url: 'https://www.linkedin.com/in/chokshidhruv/'
+        },
+        {
+            name: 'Email',
+            url: 'mailto:dhruvchokshi005@gmail.com'
+        }
+    ];
+
+
     return (
         <footer className="w-full bg-gradient-to-b border-t border-slate-900 from-slate-950 to-slate-900 py-10 z-[9999] px-10">
             <div className="flex flex-col items-center text-sm text-center">
@@ -16,17 +36,31 @@ const Footer = () => {
         
 
                 <div className='flex justify-center items-center pt-2 md:gap-6'>
-                    <motion.a whileHover={{scale: 1.05}} whileTap={{scale: 1.00}}  className=" text-slate-400 font-semibold tracking-wide p-2 z-40 text-md cursor-pointer"><Link to={'about-me'} activeClass="active" smooth={true} spy={true} duration={1000} offset={-55}>About</Link></motion.a>
-                    <motion.a whileHover={{scale: 1.05}} whileTap={{scale: 1.00}}  className=" text-slate-400 font-semibold tracking-wide p-2 z-40 text-md cursor-pointer"><Link to={'experiences'} activeClass="active" smooth={true} spy={true} duration={1000} offset={-55}>Experience</Link></motion.a>
-                    <motion.a whileHover={{scale: 1.05}} whileTap={{scale: 1.00}}  className=" text-slate-400 font-semibold tracking-wide p-2 z-40 text-md cursor-pointer"><Link to={'projects'} activeClass="active" smooth={true} spy={true} duration={1000} offset={-55}>Project</Link></motion.a>
-                    <motion.a whileHover={{scale: 1.05}} whileTap={{scale: 1.00}}  className=" text-slate-400 font-semibold tracking-wide p-2 z-40 text-md cursor-pointer"><Link to={'contact'} activeClass="active" smooth={true} spy={true} duration={1000} offset={-55}>Contact</Link></motion.a>
+                    <motion.a whileHover={{scale: 1.02}} whileTap={{scale: 1.00}}  className=" text-slate-400 font-semibold tracking-wide p-2 z-40 text-md cursor-pointer"><Link to={'about-me'} activeClass="active" smooth={true} spy={true} duration={1000} offset={-55}>About</Link></motion.a>
+                    <motion.a whileHover={{scale: 1.02}} whileTap={{scale: 1.00}}  className=" text-slate-400 font-semibold tracking-wide p-2 z-40 text-md cursor-pointer"><Link to={'experiences'} activeClass="active" smooth={true} spy={true} duration={1000} offset={-55}>Experience</Link></motion.a>
+                    <motion.a whileHover={{scale: 1.02}} whileTap={{scale: 1.00}}  className=" text-slate-400 font-semibold tracking-wide p-2 z-40 text-md cursor-pointer"><Link to={'projects'} activeClass="active" smooth={true} spy={true} duration={1000} offset={-55}>Project</Link></motion.a>
+                    <motion.a whileHover={{scale: 1.02}} whileTap={{scale: 1.00}}  className=" text-slate-400 font-semibold tracking-wide p-2 z-40 text-md cursor-pointer"><Link to={'contact'} activeClass="active" smooth={true} spy={true} duration={1000} offset={-55}>Contact</Link></motion.a>
                 </div>
 
                 <div className='flex justify-center gap-2 md:gap-4 py-2'>
-                    <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}  className=" border border-slate-900 text-slate-400 font-bold uppercase tracking-wider p-2 rounded-lg cursor-pointer text-lg" href='#'><FaGithub /></motion.a>
-                    <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}  className=" border border-slate-900 text-slate-400 font-bold uppercase tracking-wider p-2 rounded-lg cursor-pointer text-lg" href='#'><FaInstagram /></motion.a>
-                    <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}  className=" border border-slate-900 text-slate-400 font-bold uppercase tracking-wider p-2 rounded-lg cursor-pointer text-lg" href='#'><FaLinkedin /></motion.a>
-                    <motion.a whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}  className=" border border-slate-900 text-slate-400 font-bold uppercase tracking-wider p-2 rounded-lg cursor-pointer text-lg" href='#'><MdEmail /></motion.a>
+
+                    {Links.map((link, index) => (
+                        <motion.a
+                            key={index}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className=" border border-slate-900 text-slate-400 font-bold uppercase tracking-wider p-2 rounded-lg cursor-pointer text-lg"
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {link.name === 'Github' && <FaGithub />}
+                            {link.name === 'Instagram' && <FaInstagram />}
+                            {link.name === 'Linkedin' && <FaLinkedin />}
+                            {link.name === 'Email' && <MdEmail />}
+                        </motion.a>
+                    ))}
+                
                 </div>
 
                 <img src={Logo} alt="Dhruv Logo" className="w-52 h-36 select-none"></img>
