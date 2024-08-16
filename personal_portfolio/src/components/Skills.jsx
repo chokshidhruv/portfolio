@@ -114,7 +114,7 @@ const Skills = () => {
 
             <div className="grid place-items-start lg:flex w-full max-w-screen-lg py-5 items-center mt-10 gap-4 px-4 bg-slate-900 opacity-75 rounded-xl border-slate-800">
                 <p className="sm:text-2xl text-xl font-semibold text-slate-400">Languages:</p>
-                <div whileHover={{scale: 1.05}} whileTap={{scale: 1.00}} className="grid grid-cols-4 xs:grid-cols-9 md:grid-cols-8 md:flex gap-5 sm:gap-10 place-items-center text-center justify-center ">
+                <div whileHover={{scale: 1.05}} whileTap={{scale: 1.00}} className="grid grid-cols-5 xs:grid-cols-9 md:grid-cols-8 md:flex gap-5 sm:gap-10 place-items-center text-center justify-center ">
                     {Languages.map((lang, index) => {
                         const Icon = lang.Icon;
                         return (
