@@ -3,17 +3,89 @@ import Dhruv from '../assets/Dhruv.jpg'
 import { motion } from 'framer-motion'
 import Modal from './Modal'
 import full from '../assets/full.png'
+import DhruvLogo from '../assets/logo-dhruv-2-.jpg'
+import EZKart from '../assets/ezkart.png'
+import QuickLink from '../assets/quickLink.png'
 
 const Projects = () => {
 
     const experienceList = [
         {
+            img: DhruvLogo,
+            title: 'Personal Portfolio Website',
+            company: 'Portfolio Website',
+            skills: ['React', 'Tailwind', 'Framer'],
+            date: '< 1 Month',
+            loc: 'dhruvchokshi.co',
+            description: {
+                title: 'Personal Portfolio Website',
+                company: 'Personal Project',
+                date: 'August 2024 · < 1 Month',
+                linksToView: [
+                    {
+                    name: 'Github',
+                    url: 'https://Google.ca'
+                    },
+                    {
+                        name: 'Github',
+                        url: 'https://Google.ca'
+                    }
+                ],
+                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+            },
+        },
+        {
+            img: EZKart,
+            title: 'Grocery Checklist Web App',
+            company: 'EzKart',
+            skills: ['React', 'Node.js', 'MongoDB'],
+            date: '< 1 Month',
+            description: {
+                title: 'EzKart',
+                company: 'Grocery Checklist Web App',
+                date: 'August 2024 · < 1 Month',
+                linksToView: [
+                    {
+                    name: 'Github',
+                    url: 'https://Google.ca'
+                    },
+                    {
+                        name: 'Github',
+                        url: 'https://Google.ca'
+                    }
+                ],
+                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+            },
+        },
+        {
+            img: QuickLink,
+            title: 'Save Tabs With Ease',
+            company: 'QuickLink',
+            skills: ['React', 'Node.js', 'MongoDB'],
+            date: '< 1 Month',
+            description: {
+                title: 'Software Engineering Intern',
+                company: 'inc',
+                date: 'August 2024 · < 1 Month',
+                linksToView: [
+                    {
+                    name: 'Github',
+                    url: 'https://Google.ca'
+                    },
+                    {
+                        name: 'Github',
+                        url: 'https://Google.ca'
+                    }
+                ],
+                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+            },
+        },
+        {
             img: full,
-            title: 'Software Engineering Intern',
-            company: 'inc',
+            title: 'Note Taking App',
+            company: 'Note Taking App',
             skills: ['React', 'Node.js', 'MongoDB'],
             date: 'Month Year - Month Year',
-            loc: 'Toronto, ON',
             description: {
                 title: 'Software Engineering Intern',
                 company: 'inc',
@@ -33,8 +105,31 @@ const Projects = () => {
         },
         {
             img: full,
-            title: 'Software Engineering Intern',
-            company: 'inc',
+            title: 'Banking App',
+            company: 'Bank App',
+            skills: ['C++'],
+            date: 'Month Year - Month Year',
+            description: {
+                title: 'Software Engineering Intern',
+                company: 'inc',
+                date: 'Month Year - Month Year',
+                linksToView: [
+                    {
+                    name: 'Github',
+                    url: 'https://Google.ca'
+                    },
+                    {
+                        name: 'Github',
+                        url: 'https://Google.ca'
+                    }
+                ],
+                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+            },
+        },
+        {
+            img: full,
+            title: 'Web3 E-commerce Website',
+            company: 'TrustBloc',
             skills: ['React', 'Node.js', 'MongoDB'],
             date: 'Month Year - Month Year',
             description: {
@@ -56,8 +151,8 @@ const Projects = () => {
         },
         {
             img: full,
-            title: 'Software Engineering Intern',
-            company: 'inc',
+            title: 'Project 4 - McMaster U.',
+            company: 'Community Impact',
             skills: ['React', 'Node.js', 'MongoDB'],
             date: 'Month Year - Month Year',
             description: {
@@ -79,8 +174,8 @@ const Projects = () => {
         },
         {
             img: full,
-            title: 'Software Engineering Intern',
-            company: 'inc',
+            title: 'Project 3 - McMaster U.',
+            company: 'Recycling System',
             skills: ['React', 'Node.js', 'MongoDB'],
             date: 'Month Year - Month Year',
             description: {
@@ -102,8 +197,77 @@ const Projects = () => {
         },
         {
             img: full,
-            title: 'Software Engineering Intern',
-            company: 'inc',
+            title: 'Project 2 - McMaster U.',
+            company: 'Get A Grip',
+            skills: ['React', 'Node.js', 'MongoDB'],
+            date: 'Month Year - Month Year',
+            description: {
+                title: 'Software Engineering Intern',
+                company: 'inc',
+                date: 'Month Year - Month Year',
+                linksToView: [
+                    {
+                    name: 'Github',
+                    url: 'https://Google.ca'
+                    },
+                    {
+                        name: 'Github',
+                        url: 'https://Google.ca'
+                    }
+                ],
+                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+            },
+        },
+        {
+            img: full,
+            title: 'Project 1 - McMaster U.',
+            company: 'Renewable Technology',
+            skills: ['React', 'Node.js', 'MongoDB'],
+            date: 'Month Year - Month Year',
+            description: {
+                title: 'Software Engineering Intern',
+                company: 'inc',
+                date: 'Month Year - Month Year',
+                linksToView: [
+                    {
+                    name: 'Github',
+                    url: 'https://Google.ca'
+                    },
+                    {
+                        name: 'Github',
+                        url: 'https://Google.ca'
+                    }
+                ],
+                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+            },
+        },
+        {
+            img: full,
+            title: 'Data Management Project',
+            company: 'Fusion of Fate',
+            skills: ['React', 'Node.js', 'MongoDB'],
+            date: 'Month Year - Month Year',
+            description: {
+                title: 'Software Engineering Intern',
+                company: 'inc',
+                date: 'Month Year - Month Year',
+                linksToView: [
+                    {
+                    name: 'Github',
+                    url: 'https://Google.ca'
+                    },
+                    {
+                        name: 'Github',
+                        url: 'https://Google.ca'
+                    }
+                ],
+                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+            },
+        },
+        {
+            img: full,
+            title: 'Tailwind CSS Project',
+            company: 'Tailwind',
             skills: ['React', 'Node.js', 'MongoDB'],
             date: 'Month Year - Month Year',
             description: {
@@ -204,7 +368,7 @@ const Projects = () => {
                                         onClick={() => openModal(exp)}
                                     >
                                         <img src={exp.img} alt='company logo' className='px-3 w-full h-72 md:h-56 rounded-t-xl'/>
-                                        <p className='text-lg font-bold text-slate-400 px-4 w-full h-10 pt-3'>{exp.company}</p>
+                                        <p className='text-lg font-bold text-slate-400 px-4 w-full pt-3'>{exp.company}</p>
                                         <p className='text-sm font-semibold text-slate-500 px-4 py-2'>{exp.title}</p>
                                         <p className='text-xs font-semibold text-slate-500 italic px-4'>{exp.date}</p>
                                         <div className='flex justify-start px-3 pt-5 gap-2'>
@@ -232,8 +396,8 @@ const Projects = () => {
                                 <div className='flex gap-2 border-b w-full pb-6 items-center border-slate-800'>
                                     <img src={selectedExperience.img} alt='company logo' className='w-[250px] h-[250px] rounded-t-xl hidden md:flex'/>
                                     <div className='flex flex-col md:px-5'>
-                                        <h2 className='font-thin text-xl '>Project Information</h2>
-                                        <h1 className='font-bold tracking-wide pt-2 text-2xl text-slate-300'>{selectedExperience.description.title}</h1>
+                                        <h2 className='font-thin md:text-xl text-lg'>Project Information</h2>
+                                        <h1 className='font-bold tracking-wide pt-2 text-xl md:text-2xl text-slate-300'>{selectedExperience.description.title}</h1>
                                         <h1 className='font-extrabold py-3 text-slate-300'>{selectedExperience.description.company}</h1>
                                         <p className='font-thin italic pb-1 text-sm'>{selectedExperience.loc}</p>
                                         <p className='font-thin italic text-sm'>{selectedExperience.description.date}</p>

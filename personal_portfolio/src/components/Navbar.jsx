@@ -117,7 +117,7 @@ const Navbar = () => {
                             navItems.map((item, i) => (
                                 <motion.li className="text-slate-300 font-medium py-2 hover:text-slate-400 active:text-slate-500" key={item.id} variants={iconVariant(i/3)} initial="hidden" animate="visible" >
                                 {/* <a href={item.link}> {item.title}</a> */}
-                                <Link to={item.link} activeClass="active" smooth={true} spy={true} duration={1000} offset={-30} onClick={closeMenu} className='cursor-pointer select-none'>{item.title}</Link>
+                                <Link to={item.link} activeClass="active" smooth={true} spy={true} duration={1000} offset={-30} onClick={() => setOpen((open) => !open)} className='cursor-pointer select-none'>{item.title}</Link>
                                 </motion.li>
                             ))
                         }
