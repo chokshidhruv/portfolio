@@ -31,7 +31,7 @@ const Experiences = () => {
         date: "Month Year - Month Year",
         linksToView: [
           {
-            name: "View Website",
+            name: "Website",
             url: "https://Google.ca",
           },
           {
@@ -40,14 +40,14 @@ const Experiences = () => {
           },
         ],
         paragraph:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie",
+          "Stay tuned for updates!",
       },
     },
     {
       img: SesLogo,
       title: "Wesite Developer",
       company: "Software Engineering Society",
-      skills: ["Tailwind", "Astro.js"],
+      skills: ["Tailwind", "Astro", 'React'],
       date: "April 2024 - Present",
       loc: "McMaster University",
       description: {
@@ -56,7 +56,7 @@ const Experiences = () => {
         date: "Month Year - Month Year",
         linksToView: [
           {
-            name: "Github",
+            name: "Website",
             url: "https://Google.ca",
           },
           {
@@ -64,9 +64,8 @@ const Experiences = () => {
             url: "https://Google.ca",
           },
         ],
-        paragraph:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie",
-      },
+        paragraph: `As a <strong>website developer</strong> for McMaster’s Software Engineering Society (SES), I assisted the Web Developer Lead in producing SES’s high-performance and dynamic website using <strong>React</strong>, <strong>TailwindCSS</strong>, <strong>AstroJS</strong>, and <strong>MDX</strong> for an engineering student union of over <strong>5,000 students.</strong> I also researched various <strong>UI/UX components</strong> on platforms such as Dribbble and Behance, using them as inspiration to create custom designs from scratch, tailored specifically for the SES website.`      ,
+    },
     },
     {
       img: MesLogo,
@@ -81,16 +80,16 @@ const Experiences = () => {
         date: "Month Year - Month Year",
         linksToView: [
           {
-            name: "Github",
+            name: "MES Website",
             url: "https://Google.ca",
           },
           {
-            name: "Github",
+            name: "MES Website",
             url: "https://Google.ca",
           },
         ],
         paragraph:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie",
+          "Stay tuned for updates!",
       },
     },
     {
@@ -115,8 +114,8 @@ const Experiences = () => {
           },
         ],
         paragraph:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie",
-      },
+            "Stay tuned for updates!",      
+        },
     },
     {
       img: MacLogo,
@@ -140,8 +139,8 @@ const Experiences = () => {
           },
         ],
         paragraph:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie",
-      },
+            "Stay tuned for updates!",     
+        },
     },
     {
       img: ScitechLogo,
@@ -165,7 +164,7 @@ const Experiences = () => {
           },
         ],
         paragraph:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie",
+          "Stay tuned for updates!",
       },
     },
     {
@@ -190,8 +189,8 @@ const Experiences = () => {
           },
         ],
         paragraph:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie",
-      },
+            "Stay tuned for updates!",      
+    },
     },
     {
       img: SDM,
@@ -215,8 +214,8 @@ const Experiences = () => {
           },
         ],
         paragraph:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie",
-      },
+            "Stay tuned for updates!",      
+    },
     },
     {
       img: ChingLogo,
@@ -506,8 +505,7 @@ const Experiences = () => {
                     </div>
                   </div>
                 </div>
-                <p className="py-4 pb-8 text-slate-300">
-                  {selectedExperience.description.paragraph}
+                <p className="py-4 pb-8 text-slate-300" dangerouslySetInnerHTML={{ __html: selectedExperience.description.paragraph }}>
                 </p>
               </section>
             </Modal>
