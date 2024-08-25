@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import Modal from "./Modal";
 import full from "../assets/full.png";
 import bottom from "../assets/Intersect.png";
-import LdcLogo from "../assets/ldcLogo.png";
-import SesLogo from "../assets/sesLogo.png";
+import LdcLogo from "../assets/macldc.png";
+import SesLogo from "../assets/ses.png";
 import MesLogo from "../assets/mesLogo.png";
 import MacLogo from "../assets/mcmasterLogo.png";
 import SDM from "../assets/shoppers.jpg";
@@ -21,39 +21,53 @@ const Experiences = () => {
       img: LdcLogo,
       title: "Website Developer Lead",
       company: "Leadership Dev. Conference",
-      skills: ["React", "Tailwind", "Framer"],
+      skills: ["React", "Tailwind", "UI/UX"],
       date: "April 2024 - Present",
       loc: "McMaster University",
       description: {
         title: "Website Developer Lead",
         company:
           "Leadership Development Conference - McMaster Engineering Society",
-        date: "Month Year - Month Year",
+        skills: ["React", "Tailwind", "UI/UX"],
         linksToView: [
           {
-            name: "Website",
-            url: "https://Google.ca",
+            name: "Website (In Progress)",
+            url: "https://macengldc.netlify.app",
           },
           {
             name: "Github",
-            url: "https://Google.ca",
+            url: "https://github.com/Leadership-Dev-Conference-Committee/LDCC-Website-Official",
+          },
+          {
+            name: "Portfolio",
+            url: "https://www.notion.so/Dhruv-Chokshi-85e16a82406f40eaa48235eaf8129a6c",
           },
         ],
         paragraph:
-          "Stay tuned for updates!",
+          <p>For the past five years, McMaster University – specifically the McMaster Engineering Society – has proudly hosted the Annual Leadership Development Conference. A conference providing upcoming engineering students the opportunity to acquire valuable skills, network and participate in discussions with professionals in the industry. <br /> <br />
+
+          With the immense success in the previous year, and as the Lead Website Developer (and the Co-Chair of this committee) I took it upon myself to create a dynamic and responsive website to advertise the advantages of attending this conference for a McMaster University student union of over 5000 individuals. <br /><br />
+          
+          My role included the development of the LDC Website from the ground up. Created using React and Tailwind, I utilized various techniques to ensure the site was user-friendly. For example, using React Routing to create a seamless multi-page experience; integrating responsive design using TailwindCSS to ensure the site performed well across various devices; and utilizing React’s reusable components to streamline the development process and ensure consistency across the site. <br /><br />
+          
+          Additionally, I used Figma to craft the UI/UX design from scratch. This includes custom ‘LDC’ theme designs that reflect the branding of the McMaster Engineering Society (specifically, Leadership Development Conference), with a professional aesthetic that appeals to the target audience of students and sponsors. <br /><br />
+          
+          Finally… 
+          Nevermind! I won’t bore you more; however, if you would like to see my full development process, struggles, and what else I have accomplished with the creation of the Leadership Development Conference Committee website, then please visit my portfolio which will have process soon! 
+          </p>
       },
     },
     {
       img: SesLogo,
       title: "Wesite Developer",
       company: "Software Engineering Society",
-      skills: ["Tailwind", "Astro", 'React'],
+      skills: ["Tailwind", "Astro", 'UI/UX'],
       date: "April 2024 - Present",
       loc: "McMaster University",
       description: {
         title: "Website Developer",
         company: "Software Engineering Society",
-        date: "Month Year - Month Year",
+        skills: ["React", "Tailwind", "UI/UX"],
         linksToView: [
           {
             name: "Website",
@@ -64,28 +78,28 @@ const Experiences = () => {
             url: "https://Google.ca",
           },
         ],
-        paragraph: `As a <strong>website developer</strong> for McMaster’s Software Engineering Society (SES), I assisted the Web Developer Lead in producing SES’s high-performance and dynamic website using <strong>React</strong>, <strong>TailwindCSS</strong>, <strong>AstroJS</strong>, and <strong>MDX</strong> for an engineering student union of over <strong>5,000 students.</strong> I also researched various <strong>UI/UX components</strong> on platforms such as Dribbble and Behance, using them as inspiration to create custom designs from scratch, tailored specifically for the SES website.`      ,
+        paragraph: <p>As a website developer for McMaster’s Software Engineering Society (SES), I assisted the Web Developer Lead in producing SES’s high-performance and dynamic website using React, TailwindCSS, AstroJS, and MDX for an engineering student union of over 5,000 students. I also researched various UI/UX components on platforms such as Dribbble and Behance, using them as inspiration to create custom designs from scratch, tailored specifically for the SES website.</p>
     },
     },
     {
       img: MesLogo,
-      title: "Leadership Development Conference Coordinator",
+      title: "Leadership Dev. Conference Committee Co-Chair",
       company: "McMaster Engineernig Society",
       skills: ["Leadership", "Teamwork"],
       date: "April 2024 - Present",
       loc: "McMaster University",
       description: {
-        title: "Leadership Development Conference Coordinator",
+        title: "Leadership Development Conference Committee Co-Chair",
         company: "McMaster Engineering Society",
-        date: "Month Year - Month Year",
+        skills: ["React", "Tailwind", "UI/UX"],
         linksToView: [
           {
-            name: "MES Website",
-            url: "https://Google.ca",
+            name: "LDC Website",
+            url: "https://macengldc.netlify.app",
           },
           {
             name: "MES Website",
-            url: "https://Google.ca",
+            url: "https://macengsociety.ca",
           },
         ],
         paragraph:
@@ -102,7 +116,7 @@ const Experiences = () => {
       description: {
         title: "Residence Ambassador",
         company: "McMaster University - Housing and Conference Services",
-        date: "Month Year - Month Year",
+        skills: ["Communication", "Customer Service", "Time Management", "Tours"],
         linksToView: [
           {
             name: "Github",
@@ -114,7 +128,10 @@ const Experiences = () => {
           },
         ],
         paragraph:
-            "Stay tuned for updates!",      
+            <p>As a Residence Ambassador for McMaster University, my role was to inform prospective students and their parents/relatives about the numerous advantages of living on campus during their first year, using my own room as an example. I conducted more than fifty informative residence tours, engaging with over 500 students.
+            Throughout this role, I continually honed my communication and interpersonal skills, adeptly answering a wide range of questions about campus life and tailoring each tour to align with the specific interests of each prospective student. This personalized approach created a more welcoming experience for all participants.
+            I worked as a Residence Ambassador during the first year of my engineering program at McMaster University. This experience taught me the importance of time management and enhanced my ability to manage multiple commitments – as I was able to successfully juggle my academic responsibilities with my part-time job. 
+            </p>      
         },
     },
     {
@@ -314,7 +331,7 @@ const Experiences = () => {
           },
         ],
         paragraph:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie",
+          <p>Lorem ipsum dolor sit amet, <strong>dsk</strong> consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie</p>,
       },
     },
   ];
@@ -477,7 +494,7 @@ const Experiences = () => {
                     </p>
 
                     <div className="flex flex-wrap gap-2 pt-5">
-                      {selectedExperience.skills.map((skill, index) => (
+                      {selectedExperience.description.skills.map((skill, index) => (
                         <p
                           key={index}
                           className="text-xs font-semibold text-blue-400 px-2 py-1 bg-slate-800 rounded-full"
@@ -505,7 +522,8 @@ const Experiences = () => {
                     </div>
                   </div>
                 </div>
-                <p className="py-4 pb-8 text-slate-300" dangerouslySetInnerHTML={{ __html: selectedExperience.description.paragraph }}>
+                <p className="py-4 pb-8 text-slate-400 leading-relaxed text-md">
+                  {selectedExperience.description.paragraph }
                 </p>
               </section>
             </Modal>

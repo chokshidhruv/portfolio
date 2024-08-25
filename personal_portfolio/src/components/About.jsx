@@ -9,7 +9,7 @@ const About = () => {
     const aboutPar = [
         {
             id: "About Me",
-            text: 'Thank you for taking the time to visit my page! My name is Dhruv, I am a software engineering student at McMaster University. I graduated from the Regional SciTech program at Chinguacousy Secondary School, where my passion for influencing positive change through innovation-driven learning grew. At McMaster, I have had the opportunity to apply my skill sets through real-life, project-based learning.'
+            text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit'
         },
         {
             id: "Current Endeavours",

@@ -100,7 +100,7 @@ const Navbar = () => {
                         navItems.map((item, i) => (
                             <motion.li className="text-slate-300 font-medium hover:text-slate-400 active:text-slate-500 transition-[0.1]" key={item.id} variants={iconVariant(i/10)} initial="hidden" animate="visible" >
                             {/* <a href={item.link}> {item.title}</a> */}
-                            <Link to={item.link} activeClass="active" smooth={true} spy={true} duration={1000} offset={-55} onClick={closeMenu} className='cursor-pointer select-none'>{item.title}</Link>
+                                <Link to={item.link} activeClass="active" smooth={true} spy={true} duration={1000} offset={-55} onClick={closeMenu} className='cursor-pointer select-none'>{item.title}</Link>
                             </motion.li>
                         ))
                     }
@@ -109,23 +109,25 @@ const Navbar = () => {
                     <motion.button className="flex md:hidden text-2xl" initial={true} animate={open ? 'opened' : 'closed'} onClick={() => setOpen((open) => !open)}><IoMenu /></motion.button>
                     
                 </div>
-                </section>
-                <section className='flex flex-col justify-between md:hidden px-10 bg-slate-950 w-full items-center'>
+            </section>
+
+            <section className='flex flex-col justify-between md:hidden px-10 bg-slate-950 w-full items-center'>
                 <motion.div className='justify-between flex max-w-screen-2xl w-full items-end' variants={menuDrawer} initial={true} animate={open ? 'opened' : 'closed'}>
                         <motion.ul className=" flex-col justify-start flex text-left -mt-2 pb-8">
                         {
                             navItems.map((item, i) => (
                                 <motion.li className="text-slate-300 font-medium py-2 hover:text-slate-400 active:text-slate-500" key={item.id} variants={iconVariant(i/3)} initial="hidden" animate="visible" >
                                 {/* <a href={item.link}> {item.title}</a> */}
-                                <Link to={item.link} activeClass="active" smooth={true} spy={true} duration={1000} offset={-30} onClick={() => setOpen((open) => !open)} className='cursor-pointer select-none'>{item.title}</Link>
+                                    <Link to={item.link} activeClass="active" smooth={true} spy={true} duration={1000} offset={-30} onClick={() => setOpen((open) => !open)} className='cursor-pointer select-none'>{item.title}</Link>
                                 </motion.li>
                             ))
                         }
                         </motion.ul>
                 </motion.div>
-             </section>
+            </section>
         
         </header></Headroom>
+        
       )
 
 }
