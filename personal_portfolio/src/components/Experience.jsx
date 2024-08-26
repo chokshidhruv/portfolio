@@ -53,7 +53,7 @@ const Experiences = () => {
           Additionally, I used Figma to craft the UI/UX design from scratch. This includes custom ‘LDC’ theme designs that reflect the branding of the McMaster Engineering Society (specifically, Leadership Development Conference), with a professional aesthetic that appeals to the target audience of students and sponsors. <br /><br />
           
           Finally… 
-          Nevermind! I won’t bore you more; however, if you would like to see my full development process, struggles, and what else I have accomplished with the creation of the Leadership Development Conference Committee website, then please visit my portfolio which will have process soon! 
+          Nevermind! I won’t bore you more; however, if you would like to see my full development process, struggles, and what else I have accomplished with the creation of the Leadership Development Conference Committee website, then please visit my portfolio which will be updated soon! 
           </p>
       },
     },
@@ -70,12 +70,8 @@ const Experiences = () => {
         skills: ["React", "Tailwind", "UI/UX"],
         linksToView: [
           {
-            name: "Website",
-            url: "https://Google.ca",
-          },
-          {
             name: "Github",
-            url: "https://Google.ca",
+            url: "https://github.com/McMaster-Software-Engineering-Society/SES-Website",
           },
         ],
         paragraph: <p>As a website developer for McMaster’s Software Engineering Society (SES), I assisted the Web Developer Lead in producing SES’s high-performance and dynamic website using React, TailwindCSS, AstroJS, and MDX for an engineering student union of over 5,000 students. I also researched various UI/UX components on platforms such as Dribbble and Behance, using them as inspiration to create custom designs from scratch, tailored specifically for the SES website.</p>
@@ -89,7 +85,7 @@ const Experiences = () => {
       date: "April 2024 - Present",
       loc: "McMaster University",
       description: {
-        title: "Leadership Development Conference Committee Co-Chair",
+        title: "Leadership Development Conference Committee Co-Chair ",
         company: "McMaster Engineering Society",
         skills: ["React", "Tailwind", "UI/UX"],
         linksToView: [
@@ -129,81 +125,49 @@ const Experiences = () => {
         ],
         paragraph:
             <p>As a Residence Ambassador for McMaster University, my role was to inform prospective students and their parents/relatives about the numerous advantages of living on campus during their first year, using my own room as an example. I conducted more than fifty informative residence tours, engaging with over 500 students.
-            Throughout this role, I continually honed my communication and interpersonal skills, adeptly answering a wide range of questions about campus life and tailoring each tour to align with the specific interests of each prospective student. This personalized approach created a more welcoming experience for all participants.
+            Throughout this role, I continually honed my communication and interpersonal skills, adeptly answering a wide range of questions about campus life and tailoring each tour to align with the specific interests of each prospective student. 
+            <br/> <br/>
+            This personalized approach created a more welcoming experience for all participants.
             I worked as a Residence Ambassador during the first year of my engineering program at McMaster University. This experience taught me the importance of time management and enhanced my ability to manage multiple commitments – as I was able to successfully juggle my academic responsibilities with my part-time job. 
             </p>      
         },
     },
     {
-      img: MacLogo,
-      title: "Residence Ambassador",
-      company: "McMaster University",
-      skills: ["Communication", "Tours"],
-      date: "August 2023 - April 2024",
-      loc: "McMaster University",
-      description: {
-        title: "Residence Ambassador",
-        company: "McMaster University - Housing and Conference Services",
-        date: "Month Year - Month Year",
-        linksToView: [
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
-        ],
-        paragraph:
-            "Stay tuned for updates!",     
-        },
-    },
-    {
       img: ScitechLogo,
-      title: "TA of Math Dept.",
-      company: "Grade 9/10 Math Dept.",
-      skills: ["Customer Service", "Teamwork"],
-      date: "August 2022 - January 2023",
-      loc: "Brampton Civic Hopsital - William Osler",
+      title: "Teaching Assistant",
+      company: "TA of Math Dept.",
+      skills: ["Math", "Scratch Coding"],
+      date: "September 2022 - January 2023",
+      loc: "Chinguacousy Secondary School",
       description: {
-        title: "Residence Ambassador",
-        company: "McMaster University - Housing and Conference Services",
-        date: "Month Year - Month Year",
+        title: "Teaching Assistant of Grade 9-10 Math Department",
+        company: "Chinguacousy S.S. Math Department",
+        skills: ["Math", "Scratch Coding", "Communication"],
         linksToView: [
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
         ],
         paragraph:
-          "Stay tuned for updates!",
+          <p>As the Teaching Assistant for the grade 9/10 math department at Chinguacousy Secondary School, I assisted the teacher in carrying out instructions, marked tests, and worked closely with 25+ students to help them understand the provided material with greater efficiency. My role was ensuring that students remained focused during lessons and supported students one-on-one with clarifying any concepts when needed. <br/> <br/> 
+
+          Additionally, during my spare period over the course of four months, I collaborated with a teacher and a grade 9 class in assisting them with various curriculum concepts and Scratch Coding to demonstrate the practical applications of what they were learning. <br/> <br/> 
+          
+          I also led additional support classes with students during lunchtime, assisting an average of 10-12 students with assignments and clarifying concepts.  <br/> <br/> 
+          
+          This role taught me immensely on the importance of effective communication and patience. 
+          </p>
       },
     },
     {
       img: BCHospital,
       title: "Hopspital Volunteer",
       company: "Brampton Civic Hospital",
-      skills: ["Customer Service", "Teamwork"],
+      skills: ["Customer Service",],
       date: "August 2022 - January 2023",
       loc: "Brampton Civic Hopsital - William Osler",
       description: {
-        title: "Residence Ambassador",
-        company: "McMaster University - Housing and Conference Services",
-        date: "Month Year - Month Year",
+        title: "Brampton Civic Hopsital Volunteer",
+        company: "Brampton Civic Hospital",
+        skills: ["Customer Service", "Communication", "Compassion"],
         linksToView: [
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
         ],
         paragraph:
             "Stay tuned for updates!",      
@@ -215,20 +179,12 @@ const Experiences = () => {
       company: "Shoppers Drug Mart",
       skills: ["Customer Service", "Teamwork"],
       date: "September 2021 - March 2022",
-      loc: "McMaster University",
+      loc: "Brampton, ON",
       description: {
-        title: "Residence Ambassador",
-        company: "McMaster University - Housing and Conference Services",
-        date: "Month Year - Month Year",
+        title: "Pharmacy Assistant (Co-op)",
+        company: "Shoppers Drug Mart - Pharmacy",
+        skills: ["Customer Service", "Teamwork", "Time Management", "Patience"],
         linksToView: [
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
         ],
         paragraph:
             "Stay tuned for updates!",      
@@ -238,25 +194,17 @@ const Experiences = () => {
       img: ChingLogo,
       title: "Dedicated MC/Host",
       company: "Chinguacousy S.S.",
-      skills: ["Customer Service", "Teamwork"],
+      skills: ["Public Speaking", "Leadership"],
       date: "September 2021 - June 2023",
-      loc: "Save Max Sports Centre",
+      loc: "Chinguacousy Secondary School",
       description: {
-        title: "Residence Ambassador",
-        company: "McMaster University - Housing and Conference Services",
-        date: "Month Year - Month Year",
+        title: "Dedicated MC/Host",
+        company: "Chinguacousy S.S. - Athletic Council MC; Grade 9 Orientation Host; Take your Kids to Work Day Host, Prom MC",
+        skills: ["Public Speaking", "Leadership"],
         linksToView: [
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
         ],
         paragraph:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie",
+          "Stay tuned for updates!",
       },
     },
     {
@@ -267,21 +215,13 @@ const Experiences = () => {
       date: "November 2021 - August 2022",
       loc: "Save Max Sports Centre",
       description: {
-        title: "Residence Ambassador",
-        company: "McMaster University - Housing and Conference Services",
-        date: "Month Year - Month Year",
+        title: "Vaccination Clinic Volunteer",
+        company: "Peel Region Vaccine Clinic",
+        skills: ["Customer Service", "Teamwork"],
         linksToView: [
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
         ],
         paragraph:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie",
+        "Stay tuned for updates!",
       },
     },
     {
@@ -292,46 +232,30 @@ const Experiences = () => {
       date: "August 2020 - June 2023",
       loc: "Save Max Sports Centre",
       description: {
-        title: "Residence Ambassador",
-        company: "McMaster University - Housing and Conference Services",
-        date: "Month Year - Month Year",
+        title: "President/Chairman",
+        company: "Student Athletic Council - Chinguacousy S.S.",
+        skills: ["Customer Service", "Teamwork"],
         linksToView: [
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
         ],
         paragraph:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie",
+        "Stay tuned for updates!",
       },
     },
     {
       img: ScitechLogo,
       title: "SciTech Regional Program + Health & Wellness SHSM",
       company: "Chinguacousy S.S.",
-      skills: ["Customer Service", "Teamwork"],
+      skills: ["SciTech", "SHSM"],
       date: "September 2019 - June 2023",
-      loc: "Save Max Sports Centre",
+      loc: "Chinguacousy Secondary School",
       description: {
         title: "Residence Ambassador",
-        company: "McMaster University - Housing and Conference Services",
-        date: "Month Year - Month Year",
+        company: "Chinguacousy Secondary School",
+        skills: ["SciTech", "SHSM"],
         linksToView: [
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
-          {
-            name: "Github",
-            url: "https://Google.ca",
-          },
         ],
         paragraph:
-          <p>Lorem ipsum dolor sit amet, <strong>dsk</strong> consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie</p>,
+          <p>Stay tuned for updates!</p>
       },
     },
   ];
@@ -470,30 +394,30 @@ const Experiences = () => {
           {selectedExperience && (
             <Modal isVisible={true} onClose={closeModal}>
               <section className="flex flex-col items-start px-10 text-slate-400">
-                <div className="flex gap-2 border-b w-full pb-6 items-center border-slate-800">
+                <div className="flex gap-4 border-b w-full pb-6 items-center border-slate-800">
                   <img
                     src={selectedExperience.img}
                     alt="company logo"
                     className="w-[250px] h-[250px] rounded-t-xl hidden md:flex select-none"
                   />
-                  <div className="flex flex-col md:px-5">
+                  <div className="flex flex-col md:px-5 justify-center gap-3">
                     <h2 className="font-thin text-xl ">
                       Experience Information
                     </h2>
-                    <h1 className="font-bold tracking-wide pt-2 text-2xl text-slate-300">
+                    <h1 className="font-bold tracking-wide text-2xl py-1 text-slate-300">
                       {selectedExperience.description.title}
                     </h1>
-                    <h1 className="font-extrabold py-3 text-slate-300">
+                    <h1 className="font-extrabold gap-2 text-slate-300">
                       {selectedExperience.description.company}
                     </h1>
-                    <p className="font-thin italic pb-1 text-sm">
+                    <p className="font-thin italic text-sm">
                       {selectedExperience.loc}
                     </p>
                     <p className="font-thin italic text-sm">
                       {selectedExperience.date}
                     </p>
 
-                    <div className="flex flex-wrap gap-2 pt-5">
+                    <div className="flex flex-wrap gap-2">
                       {selectedExperience.description.skills.map((skill, index) => (
                         <p
                           key={index}
@@ -504,7 +428,7 @@ const Experiences = () => {
                       ))}
                     </div>
 
-                    <div className="flex flex-wrap gap-2 pt-5">
+                    <div className="flex flex-wrap gap-2">
                       {selectedExperience.description.linksToView.map(
                         (link, index) => (
                           <motion.a

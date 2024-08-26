@@ -9,7 +9,7 @@ const About = () => {
     const aboutPar = [
         {
             id: "About Me",
-            text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit'
+            text: ' I am Dhruv Chokshi, an engineering student at McMaster University. I love sports, weightlifting and computing — and recently gained a profound passion for CAD modelling. I graduated from the Regional SciTech program at Chinguacousy Secondary School, where my passion for influencing positive change through innovation-driven learning grew and strengthened. The Sci-tech program was only the beginning of my endeavours to induce change in various fields of study with technology.  And here at McMaster, I have the opportunity to apply my skill sets through real-life, project-based learning.'
         },
         {
             id: "Current Endeavours",
@@ -53,7 +53,7 @@ const About = () => {
             <main className='grid justify-center text-center bg-gradient-to-b from-black to-slate-950 px-10 pb-16 pt-10 text-sm font-bold text-blue-400'>
                 <section className='w-full flex gap-8 justify-between items-center max-w-screen-xl md:px-24 py-10 bg-slate-900 opacity-90 border rounded-xl border-slate-800'>
                     <div className='lg:flex hidden flex-col items-center gap-4'>
-                        <img src={DhruvImg} alt='image of me' className='hidden lg:flex rounded-3xl w-80 h-80 border-4  border-blue-300' />
+                        <img src={DhruvImg} alt='image of me' className='hidden lg:flex rounded-3xl w-80 h-80 border-4  border-blue-400' />
                         <div className='flex justify-center text-center gap-4'>
                             {/* href='https://drive.google.com/file/d/1YapvuK_F_2B3TXn_6IqhQlPThlmqNWqZ/view?usp=sharing' */}
                             <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} target='_blank' className="bg-blue-400 text-slate-950 font-bold cursor-pointer uppercase tracking-wider flex items-center px-6 py-1 rounded-full text-md z-40">Resume</motion.a>

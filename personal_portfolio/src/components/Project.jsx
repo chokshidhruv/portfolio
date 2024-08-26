@@ -383,12 +383,12 @@ const Projects = () => {
                             ))
                         }
                     </motion.div>
-
+{/* 
                     {experienceList.length > 4 && (
                         <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className='mt-8 px-4 pt-2 text-blue-400 bg-slate-950 rounded-full font-semibold' onClick={ () => setShowAll(!showAll)}>
                             {showAll ? 'View Less...' : 'View More...'}
                         </motion.button>
-                    )}
+                    )} */}
 
                     {selectedExperience && (
                         <Modal isVisible={true} onClose={closeModal}>
