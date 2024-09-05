@@ -13,7 +13,7 @@ const About = () => {
             <br/><br/>
             My journey began in the Regional SciTech program at Chinguacousy Secondary School, where I discovered my love for influencing change through innovation-driven learning. That passion has only grown here at McMaster, where I’m applying my skills through project-based learning. But beyond tech, my motivation is to help others. During high school, I spent a significant amount of my time volunteering at my local hospital, vaccine clinics, and pharmacies – driven by my sole desire to make a difference in my community.
             <br/><br/>
-            In the end, my goal is to connect programming with meaningful solutions that have a genuine difference in people's lives
+            In the end, my goal is to connect programming with meaningful solutions that elicit genuine difference in people's lives
             <br/><br/>
             If you’re interested in working together, I’m currently looking for a 4-month or a 12-month internship or a co-op, please feel free to reach out!
             </p>
