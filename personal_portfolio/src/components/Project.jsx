@@ -221,7 +221,7 @@ const Projects = () => {
             img: Wind,
             title: 'Project 1 - McMaster U.',
             company: 'Renewable Technology',
-            skills: ['React', 'Node.js', 'MongoDB'],
+            skills: ['Inventor', 'GrantaEDU'],
             date: 'Sept 2023 - Oct 2023',
             description: {
                 title: 'Rewnewable Technology',
@@ -236,7 +236,7 @@ const Projects = () => {
             img: Cards,
             title: 'Data Management Project',
             company: 'Fusion of Fate',
-            skills: ['React', 'Node.js', 'MongoDB'],
+            skills: ['Python', 'Data Management'],
             date: 'May 2023 - June 2023',
             description: {
                 title: 'Fusion of Fate',
@@ -248,7 +248,7 @@ const Projects = () => {
                     url: 'https://github.com/chokshidhruv/Fusion-of-Fate'
                     },
                 ],
-                paragraph: 'A project I made for the Data Management Course'
+                paragraph: 'A project I made for the Data Management course! The project was a probability game where users could play a game of chance. The game was built using Python and was a great way to learn about data management and probability.'
             },
         },
         // {
