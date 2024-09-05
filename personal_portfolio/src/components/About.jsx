@@ -15,7 +15,7 @@ const About = () => {
             <br/><br/>
             In the end, my goal is to connect programming with meaningful solutions that elicit genuine difference in people's lives
             <br/><br/>
-            If you’re interested in working together, I’m currently looking for a 4-month or a 12-month internship or a co-op, please feel free to reach out!
+            If you’re interested in working together, I’m currently looking for a 4-month or a 12-month internship/co-op, please feel free to reach out!
             </p>
         },
     ];
