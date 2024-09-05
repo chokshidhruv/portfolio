@@ -9,12 +9,15 @@ const About = () => {
     const aboutPar = [
         {
             id: "About Me",
-            text: ' I am Dhruv Chokshi, an engineering student at McMaster University. I love sports, weightlifting and computing — and recently gained a profound passion for CAD modelling. I graduated from the Regional SciTech program at Chinguacousy Secondary School, where my passion for influencing positive change through innovation-driven learning grew and strengthened. The Sci-tech program was only the beginning of my endeavours to induce change in various fields of study with technology.  And here at McMaster, I have the opportunity to apply my skill sets through real-life, project-based learning.'
+            text: <p>Welcome to my website, where I hope you’ll take some time to learn more about me! I’m Dhruv, a Software Engineering student at McMaster University – passionate about technology, sports, and making a positive impact. 
+            <br/><br/>
+            My journey began in the Regional SciTech program at Chinguacousy Secondary School, where I discovered my love for influencing change through innovation-driven learning. That passion has only grown here at McMaster, where I’m applying my skills through project-based learning. But beyond tech, my motivation is to help others. During high school, I spent a significant amount of my time volunteering at my local hospital, vaccine clinics, and pharmacies – driven by my sole desire to make a difference in my community.
+            <br/><br/>
+            In the end, my goal is to connect programming with meaningful solutions that have a genuine difference in people's lives
+            <br/><br/>
+            If you’re interested in working together, I’m currently looking for a 4-month or a 12-month internship or a co-op, please feel free to reach out!
+            </p>
         },
-        {
-            id: "Current Endeavours",
-            text: 'Currently, I am part of Software Engineering Society and the McMaster Engineering Society where I am putting my Web Dev skills to use!'
-        }
     ];
 
     const iconVariant = (duration) => ({
@@ -61,7 +64,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className='flex flex-col items-center max-w-3xl px-2 ' >
-                        <h2 className='text-4xl md:text-6xl pb-3'><span className='text-slate-400 '>About </span>Me</h2>
+                        <h2 className='text-4xl md:text-5xl pb-3'><span className='text-slate-400 '>About </span>Me</h2>
                         {
                             aboutPar.map((par) => {
                                 return(
@@ -71,7 +74,7 @@ const About = () => {
                             })
                         }   
                         <div className='flex lg:hidden justify-center text-center gap-4 mt-8'>
-                            <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} target='_blank' href='https://drive.google.com/file/d/1YapvuK_F_2B3TXn_6IqhQlPThlmqNWqZ/view?usp=sharing' className="bg-blue-400 text-slate-950 font-bold cursor-pointer uppercase tracking-wider flex items-center px-6 py-1 rounded-full text-md z-40">Resume</motion.a>
+                            <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} target='_blank' href='https://drive.google.com/file/d/1QhCrPFrKLfIriI6EJpft3S5cFrF_7PGG/view?usp=sharing' className="bg-blue-400 text-slate-950 font-bold cursor-pointer uppercase tracking-wider flex items-center px-6 py-1 rounded-full text-md z-40">Resume</motion.a>
                             <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} target='_blank' href='https://www.notion.so/Dhruv-Chokshi-85e16a82406f40eaa48235eaf8129a6c' className="bg-slate-950 border-4 border-blue-400 text-blue-400 cursor-pointer font-bold uppercase tracking-wider flex items-center text-mf px-6 py-1 rounded-full z-40">Portfolio</motion.a>
                         </div>
                     </div>
@@ -84,11 +87,11 @@ const About = () => {
                         </div>
                         <div className='w-full text-center grid items-start justify-center py-8 mt-2 border opacity-75 rounded-xl border-slate-900'>
                             <p className='text-xl font-semibold text-blue-400'>Current cGPA</p>
-                            <p className='text-lg font-normal pt-3 text-slate-400'>10.5/12 (3.90/4.00)</p>
+                            <p className='text-lg font-normal pt-3 text-slate-400'>10.4/12 (3.80/4.00)</p>
                         </div>
                         <div className='w-full text-center grid items-start justify-center py-8 mt-2 border opacity-75 rounded-xl border-slate-900'>
                             <p className='text-xl font-semibold text-blue-400'>Relevant Coursework</p>
-                            <p className='text-lg font-normal pt-3 text-slate-400'>View All My Completed Courses!</p>
+                            <p className='text-lg font-normal pt-3 text-slate-400'>View All My Completed Courses (Available Soon!)</p>
                             <a className='text-xl items-center flex justify-center py-3 hover:text-blue-500 cursor-pointer' href='#' ><AiOutlineExport /></a>
                         </div>
 

@@ -249,7 +249,7 @@ const Experiences = () => {
       date: "September 2019 - June 2023",
       loc: "Chinguacousy Secondary School",
       description: {
-        title: "Residence Ambassador",
+        title: "SciTech Regional Program + Health & Wellness SHSM",
         company: "Chinguacousy Secondary School",
         skills: ["SciTech", "SHSM"],
         linksToView: [

@@ -6,6 +6,10 @@ import full from '../assets/full.png'
 import DhruvLogo from '../assets/logo-dhruv-2-.jpg'
 import EZKart from '../assets/ezkart.png'
 import QuickLink from '../assets/quickLink.png'
+import Qarm from '../assets/QArm.jpg'
+import Wind from '../assets/wind.jpg'
+import Cards from '../assets/fof.jpg'
+import TB from '../assets/tb.png'
 
 const Projects = () => {
 
@@ -24,269 +28,252 @@ const Projects = () => {
                 linksToView: [
                     {
                     name: 'Github',
-                    url: 'https://Google.ca'
+                    url: 'https://github.com/chokshidhruv/portfolio'
                     },
                     {
-                        name: 'Github',
-                        url: 'https://Google.ca'
+                    name: 'Website',
+                    url: 'https://dhruvchokshi.co'
                     }
                 ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+                paragraph: <p>
+                My very own personal portfolio website! A website, I created individually to to showcase my academic and personal achievements. The primary goal of this project was to enhance my skills in React.js and Tailwind CSS while providing an efficient and engaging way for others to learn more about me.
+                <br/><br/>
+                To limit code changes, my website follows a simple dynamic structure using JavaScript objects to represent each project or experience inside an array. Then, the object is rendered using the map function with the same design for consistency. 
+                </p>
             },
         },
         {
             img: EZKart,
             title: 'Grocery Checklist Web App',
             company: 'EzKart',
-            skills: ['React', 'Node.js', 'MongoDB'],
-            date: '< 1 Month',
+            skills: ['Javascript', 'Firebase'],
+            date: '~ 1 Month',
             description: {
                 title: 'EzKart',
                 company: 'Grocery Checklist Web App',
-                date: 'August 2024 · < 1 Month',
+                date: 'August 2024 - September 2024',
                 linksToView: [
                     {
                     name: 'Github',
-                    url: 'https://Google.ca'
+                    url: 'https://github.com/chokshidhruv/portfolio/ezkart'
                     },
-                    {
-                        name: 'Github',
-                        url: 'https://Google.ca'
-                    }
                 ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+                paragraph: <p>
+                EzKart is a mini project created to enable users to manage their personalized shopping cart—similar to a checklist—addressing the common problem of disorganization during shopping. Instead of noting items down on your notes app or a piece of paper, EzKart offers a more streamlined approach. Beyond basic cart management, users can easily save items into their cart and simply tap on the item once they’ve collected it during their shopping trip. Moreover, users are able to share the entire cart with others, making it easier to collaborate on shopping lists. 
+                <br/><br/>
+                The frontend is built using HTML and Tailwind CSS, ensuring a clean and responsive user interface. Additionally, the back end is powered by JavaScript and utilizes Firebase for data management.
+                <br/><br/>
+                Stay tuned for more updates as the website is undergoing further updates!
+                </p>           
             },
         },
         {
             img: QuickLink,
             title: 'Save Tabs With Ease',
             company: 'QuickLink',
-            skills: ['React', 'Node.js', 'MongoDB'],
+            skills: ['Google API', 'Javascript'],
             date: '< 1 Month',
             description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
+                title: 'QuickLink',
+                company: 'Save Tabs With Ease',
                 date: 'August 2024 · < 1 Month',
                 linksToView: [
-                    {
-                    name: 'Github',
-                    url: 'https://Google.ca'
-                    },
-                    {
-                        name: 'Github',
-                        url: 'https://Google.ca'
-                    }
+
                 ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+                paragraph: 'Stay tuned for updates!'
             },
         },
+        // {
+        //     img: full,
+        //     title: 'Note Taking App',
+        //     company: 'Note Taking App',
+        //     skills: ['React', 'Node.js', 'MongoDB'],
+        //     date: 'Month Year - Month Year',
+        //     description: {
+        //         title: 'Software Engineering Intern',
+        //         company: 'inc',
+        //         date: 'Month Year - Month Year',
+        //         linksToView: [
+        //             {
+        //             name: 'Github',
+        //             url: 'https://Google.ca'
+        //             },
+        //             {
+        //                 name: 'Github',
+        //                 url: 'https://Google.ca'
+        //             }
+        //         ],
+        //         paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+        //     },
+        // },
+        // {
+        //     img: full,
+        //     title: 'Banking App',
+        //     company: 'Bank App',
+        //     skills: ['C++'],
+        //     date: 'Month Year - Month Year',
+        //     description: {
+        //         title: 'Software Engineering Intern',
+        //         company: 'inc',
+        //         date: 'Month Year - Month Year',
+        //         linksToView: [
+        //             {
+        //             name: 'Github',
+        //             url: 'https://Google.ca'
+        //             },
+        //             {
+        //                 name: 'Github',
+        //                 url: 'https://Google.ca'
+        //             }
+        //         ],
+        //         paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+        //     },
+        // },
         {
-            img: full,
-            title: 'Note Taking App',
-            company: 'Note Taking App',
-            skills: ['React', 'Node.js', 'MongoDB'],
-            date: 'Month Year - Month Year',
-            description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
-                date: 'Month Year - Month Year',
-                linksToView: [
-                    {
-                    name: 'Github',
-                    url: 'https://Google.ca'
-                    },
-                    {
-                        name: 'Github',
-                        url: 'https://Google.ca'
-                    }
-                ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
-            },
-        },
-        {
-            img: full,
-            title: 'Banking App',
-            company: 'Bank App',
-            skills: ['C++'],
-            date: 'Month Year - Month Year',
-            description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
-                date: 'Month Year - Month Year',
-                linksToView: [
-                    {
-                    name: 'Github',
-                    url: 'https://Google.ca'
-                    },
-                    {
-                        name: 'Github',
-                        url: 'https://Google.ca'
-                    }
-                ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
-            },
-        },
-        {
-            img: full,
+            img: TB,
             title: 'Web3 E-commerce Website',
             company: 'TrustBloc',
-            skills: ['React', 'Node.js', 'MongoDB'],
-            date: 'Month Year - Month Year',
+            skills: ['React', 'Web3'],
+            date: '< 1 Month',
             description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
-                date: 'Month Year - Month Year',
+                title: 'TrustBloc',
+                company: 'E-Commerce Website with Web3',
+                date: 'Hackathon Project',
                 linksToView: [
                     {
                     name: 'Github',
-                    url: 'https://Google.ca'
+                    url: 'https://github.com/chokshidhruv/TrustBloc-main'
                     },
                     {
-                        name: 'Github',
-                        url: 'https://Google.ca'
+                        name: 'Taikai',
+                        url: 'https://taikai.network/hackbox/hackathons/hawkhacks/projects/clwd31uth0d07z901wpajja3t/idea'
                     }
                 ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+                paragraph: <p>View full description of the project <a className='text-blue-400 underline' href='https://taikai.network/hackbox/hackathons/hawkhacks/projects/clwd31uth0d07z901wpajja3t/idea'>here!</a></p>
             },
         },
+        // {
+        //     img: full,
+        //     title: 'Project 4 - McMaster U.',
+        //     company: 'Community Impact',
+        //     skills: ['React', 'Node.js', 'MongoDB'],
+        //     date: 'Month Year - Month Year',
+        //     description: {
+        //         title: 'Software Engineering Intern',
+        //         company: 'inc',
+        //         date: 'Month Year - Month Year',
+        //         linksToView: [
+        //             {
+        //             name: 'Github',
+        //             url: 'https://Google.ca'
+        //             },
+        //             {
+        //                 name: 'Github',
+        //                 url: 'https://Google.ca'
+        //             }
+        //         ],
+        //         paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+        //     },
+        // },
+        // {
+        //     img: full,
+        //     title: 'Project 3 - McMaster U.',
+        //     company: 'Recycling System',
+        //     skills: ['React', 'Node.js', 'MongoDB'],
+        //     date: 'Month Year - Month Year',
+        //     description: {
+        //         title: 'Software Engineering Intern',
+        //         company: 'inc',
+        //         date: 'Month Year - Month Year',
+        //         linksToView: [
+        //             {
+        //             name: 'Github',
+        //             url: 'https://Google.ca'
+        //             },
+        //             {
+        //                 name: 'Github',
+        //                 url: 'https://Google.ca'
+        //             }
+        //         ],
+        //         paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+        //     },
+        // },
         {
-            img: full,
-            title: 'Project 4 - McMaster U.',
-            company: 'Community Impact',
-            skills: ['React', 'Node.js', 'MongoDB'],
-            date: 'Month Year - Month Year',
-            description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
-                date: 'Month Year - Month Year',
-                linksToView: [
-                    {
-                    name: 'Github',
-                    url: 'https://Google.ca'
-                    },
-                    {
-                        name: 'Github',
-                        url: 'https://Google.ca'
-                    }
-                ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
-            },
-        },
-        {
-            img: full,
-            title: 'Project 3 - McMaster U.',
-            company: 'Recycling System',
-            skills: ['React', 'Node.js', 'MongoDB'],
-            date: 'Month Year - Month Year',
-            description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
-                date: 'Month Year - Month Year',
-                linksToView: [
-                    {
-                    name: 'Github',
-                    url: 'https://Google.ca'
-                    },
-                    {
-                        name: 'Github',
-                        url: 'https://Google.ca'
-                    }
-                ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
-            },
-        },
-        {
-            img: full,
+            img: Qarm,
             title: 'Project 2 - McMaster U.',
             company: 'Get A Grip',
-            skills: ['React', 'Node.js', 'MongoDB'],
-            date: 'Month Year - Month Year',
+            skills: ['Python', 'Teamwork'],
+            date: 'Oct 2023 - Dec 2023',
             description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
-                date: 'Month Year - Month Year',
+                title: 'Get A Grip',
+                company: 'Course Project',
+                date: 'Course: Engineering 1P13',
                 linksToView: [
                     {
                     name: 'Github',
-                    url: 'https://Google.ca'
+                    url: 'https://github.com/chokshidhruv/Get-A-Grip'
                     },
-                    {
-                        name: 'Github',
-                        url: 'https://Google.ca'
-                    }
                 ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+                paragraph: <p>View full description of the project <a className='text-blue-400 underline' href='https://www.notion.so/PROJECT-2-GET-A-GRIP-2242ece2ebc1443aa0726885e8bf17a1'>here!</a></p>
             },
         },
         {
-            img: full,
+            img: Wind,
             title: 'Project 1 - McMaster U.',
             company: 'Renewable Technology',
             skills: ['React', 'Node.js', 'MongoDB'],
-            date: 'Month Year - Month Year',
+            date: 'Sept 2023 - Oct 2023',
             description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
-                date: 'Month Year - Month Year',
+                title: 'Rewnewable Technology',
+                company: 'Course Project',
+                date: 'Course: Engineering 1P13',
                 linksToView: [
-                    {
-                    name: 'Github',
-                    url: 'https://Google.ca'
-                    },
-                    {
-                        name: 'Github',
-                        url: 'https://Google.ca'
-                    }
                 ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+                paragraph: <p>View full description of the project <a className='text-blue-400 underline' href='https://www.notion.so/PROJECT-1-RENEWABLE-TECHNOLOGY-4120415ac133465c86b1c84a6a104651'>here!</a></p>
             },
         },
         {
-            img: full,
+            img: Cards,
             title: 'Data Management Project',
             company: 'Fusion of Fate',
             skills: ['React', 'Node.js', 'MongoDB'],
-            date: 'Month Year - Month Year',
+            date: 'May 2023 - June 2023',
             description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
-                date: 'Month Year - Month Year',
+                title: 'Fusion of Fate',
+                company: 'Probability Game',
+                date: 'Course: Data Management',
                 linksToView: [
                     {
                     name: 'Github',
-                    url: 'https://Google.ca'
+                    url: 'https://github.com/chokshidhruv/Fusion-of-Fate'
                     },
-                    {
-                        name: 'Github',
-                        url: 'https://Google.ca'
-                    }
                 ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+                paragraph: 'A project I made for the Data Management Course'
             },
         },
-        {
-            img: full,
-            title: 'Tailwind CSS Project',
-            company: 'Tailwind',
-            skills: ['React', 'Node.js', 'MongoDB'],
-            date: 'Month Year - Month Year',
-            description: {
-                title: 'Software Engineering Intern',
-                company: 'inc',
-                date: 'Month Year - Month Year',
-                linksToView: [
-                    {
-                    name: 'Github',
-                    url: 'https://Google.ca'
-                    },
-                    {
-                        name: 'Github',
-                        url: 'https://Google.ca'
-                    }
-                ],
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
-            },
-        },
+        // {
+        //     img: full,
+        //     title: 'Tailwind CSS Project',
+        //     company: 'Tailwind',
+        //     skills: ['React', 'Node.js', 'MongoDB'],
+        //     date: 'Month Year - Month Year',
+        //     description: {
+        //         title: 'Software Engineering Intern',
+        //         company: 'inc',
+        //         date: 'Month Year - Month Year',
+        //         linksToView: [
+        //             {
+        //             name: 'Github',
+        //             url: 'https://Google.ca'
+        //             },
+        //             {
+        //                 name: 'Github',
+        //                 url: 'https://Google.ca'
+        //             }
+        //         ],
+        //         paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec nulla ac nisi pellentesque malesuada. Cras nec purus in nisi tincidunt ultricies. Nullam auctor, purus nec aliquet dictum, nunc lorem ultricies est, nec facilisis metus mi ut sapie'
+        //     },
+        // },
     ]
 
     const iconVariant = (duration) => ({
@@ -355,7 +342,7 @@ const Projects = () => {
                     
                     <motion.div variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} className='grid grid-cols-1 min-[450px]:grid-cols-2 max-w-screen-lg md:grid-cols-4 gap-2 pt-14' >
                         {
-                            experienceList.slice(0, showAll ? experienceList.lenth : 4).map((exp, index) => (
+                            experienceList.slice(0, showAll ? experienceList.length : 4).map((exp, index) => (
                                 <div key={index} className='p-2 cursor-pointer'>
                                     <motion.div 
                                         whileHover={{ scale: 1.05 }} 
@@ -383,12 +370,12 @@ const Projects = () => {
                             ))
                         }
                     </motion.div>
-{/* 
+
                     {experienceList.length > 4 && (
                         <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className='mt-8 px-4 pt-2 text-blue-400 bg-slate-950 rounded-full font-semibold' onClick={ () => setShowAll(!showAll)}>
                             {showAll ? 'View Less...' : 'View More...'}
                         </motion.button>
-                    )} */}
+                    )}
 
                     {selectedExperience && (
                         <Modal isVisible={true} onClose={closeModal}>
