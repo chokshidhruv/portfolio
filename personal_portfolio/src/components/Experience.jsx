@@ -132,30 +132,30 @@ const Experiences = () => {
             </p>      
         },
     },
-    {
-      img: ScitechLogo,
-      title: "Teaching Assistant",
-      company: "TA of Math Dept.",
-      skills: ["Math", "Scratch Coding"],
-      date: "September 2022 - January 2023",
-      loc: "Chinguacousy Secondary School",
-      description: {
-        title: "Teaching Assistant of Grade 9-10 Math Department",
-        company: "Chinguacousy S.S. Math Department",
-        skills: ["Math", "Scratch Coding", "Communication"],
-        linksToView: [
-        ],
-        paragraph:
-          <p>As the Teaching Assistant for the grade 9/10 math department at Chinguacousy Secondary School, I assisted the teacher in carrying out instructions, marked tests, and worked closely with 25+ students to help them understand the provided material with greater efficiency. My role was ensuring that students remained focused during lessons and supported students one-on-one with clarifying any concepts when needed. <br/> <br/> 
+    // {
+    //   img: ScitechLogo,
+    //   title: "Teaching Assistant",
+    //   company: "TA of Math Dept.",
+    //   skills: ["Math", "Scratch Coding"],
+    //   date: "September 2022 - January 2023",
+    //   loc: "Chinguacousy Secondary School",
+    //   description: {
+    //     title: "Teaching Assistant of Grade 9-10 Math Department",
+    //     company: "Chinguacousy S.S. Math Department",
+    //     skills: ["Math", "Scratch Coding", "Communication"],
+    //     linksToView: [
+    //     ],
+    //     paragraph:
+    //       <p>As the Teaching Assistant for the grade 9/10 math department at Chinguacousy Secondary School, I assisted the teacher in carrying out instructions, marked tests, and worked closely with 25+ students to help them understand the provided material with greater efficiency. My role was ensuring that students remained focused during lessons and supported students one-on-one with clarifying any concepts when needed. <br/> <br/> 
 
-          Additionally, during my spare period over the course of four months, I collaborated with a teacher and a grade 9 class in assisting them with various curriculum concepts and Scratch Coding to demonstrate the practical applications of what they were learning. <br/> <br/> 
+    //       Additionally, during my spare period over the course of four months, I collaborated with a teacher and a grade 9 class in assisting them with various curriculum concepts and Scratch Coding to demonstrate the practical applications of what they were learning. <br/> <br/> 
           
-          I also led additional support classes with students during lunchtime, assisting an average of 10-12 students with assignments and clarifying concepts.  <br/> <br/> 
+    //       I also led additional support classes with students during lunchtime, assisting an average of 10-12 students with assignments and clarifying concepts.  <br/> <br/> 
           
-          This role taught me immensely on the importance of effective communication and patience. 
-          </p>
-      },
-    },
+    //       This role taught me immensely on the importance of effective communication and patience. 
+    //       </p>
+    //   },
+    // },
     {
       img: BCHospital,
       title: "Hopspital Volunteer",
