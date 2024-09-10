@@ -74,7 +74,7 @@ const About = () => {
                             })
                         }   
                         <div className='flex lg:hidden justify-center text-center gap-4 mt-8'>
-                            <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} target='_blank' href='https://drive.google.com/file/d/1hfjkLW-L6jjDdPppEKyzT36IhdDLYvBW/view?usp=sharing/' className="bg-blue-400 text-slate-950 font-bold cursor-pointer uppercase tracking-wider flex items-center px-6 py-1 rounded-full text-md z-40">Resume</motion.a>
+                            <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} target='_blank' href='https://drive.google.com/file/d/1hfjkLW-L6jjDdPppEKyzT36IhdDLYvBW/view?usp=sharing' className="bg-blue-400 text-slate-950 font-bold cursor-pointer uppercase tracking-wider flex items-center px-6 py-1 rounded-full text-md z-40">Resume</motion.a>
                             <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} target='_blank' href='https://www.notion.so/Dhruv-Chokshi-85e16a82406f40eaa48235eaf8129a6c' className="bg-slate-950 border-4 border-blue-400 text-blue-400 cursor-pointer font-bold uppercase tracking-wider flex items-center text-mf px-6 py-1 rounded-full z-40">Portfolio</motion.a>
                         </div>
                     </div>
