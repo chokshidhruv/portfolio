@@ -1,8 +1,6 @@
 import React from 'react'
-import Dhruv from '../assets/Dhruv.jpg'
 import { motion } from 'framer-motion'
 import Modal from './Modal'
-import full from '../assets/full.png'
 import DhruvLogo from '../assets/logo-dhruv-2-.jpg'
 import EZKart from '../assets/ezkart.png'
 import QuickLink from '../assets/quickLink.png'
@@ -214,7 +212,8 @@ const Projects = () => {
                     url: 'https://github.com/chokshidhruv/Get-A-Grip'
                     },
                 ],
-                paragraph: <p>View full description of the project <a className='text-blue-400 underline' href='https://www.notion.so/PROJECT-2-GET-A-GRIP-2242ece2ebc1443aa0726885e8bf17a1'>here!</a></p>
+                paragraph: <p>A collaborative project that was divided into two subgroups: computing and modelling. In the computing subgroup, my team and I worked together to identify the objectives, constraints, and requirements for a design solution. This served as the foundation for developing a program that interfaces with the Quanser Interactive Labs environment. The program was designed to sequentially identify specific containers and place them in their designated autoclave locations. This transfer process was repeated for six different containers, in a randomly selected order.
+                    <br/> <br/>View full description of the project <a className='text-blue-400 underline' href='https://www.notion.so/PROJECT-2-GET-A-GRIP-2242ece2ebc1443aa0726885e8bf17a1'>here!</a></p>
             },
         },
         {
@@ -229,7 +228,8 @@ const Projects = () => {
                 date: 'Course: Engineering 1P13',
                 linksToView: [
                 ],
-                paragraph: <p>View full description of the project <a className='text-blue-400 underline' href='https://www.notion.so/PROJECT-1-RENEWABLE-TECHNOLOGY-4120415ac133465c86b1c84a6a104651'>here!</a></p>
+                paragraph: <p>The project focused on renewable technology, specifically windmills. The objective was to select the most suitable material for wind turbine blades based on specific design requirements such as mechanical properties & performance. Working collaboratively in a group of five, I gained experience identifying objectives, utilizing a material selection process, and creating a solid turbine blade model.
+                    <br/><br/>View full description of the project <a className='text-blue-400 underline' href='https://www.notion.so/PROJECT-1-RENEWABLE-TECHNOLOGY-4120415ac133465c86b1c84a6a104651'>here!</a></p>
             },
         },
         {
@@ -247,6 +247,10 @@ const Projects = () => {
                     name: 'Github',
                     url: 'https://github.com/chokshidhruv/Fusion-of-Fate'
                     },
+                    {
+                        name: 'Game Report',
+                        url: 'https://docs.google.com/document/d/1LdMV9uIaJUWagguBG2y20wdGZflcCIaUDytMottTWfY/edit?usp=sharing'
+                    }
                 ],
                 paragraph: 'A project I made for the Data Management course! The project was a probability game where users could play a game of chance. The game was built using Python and was a great way to learn about data management and probability.'
             },

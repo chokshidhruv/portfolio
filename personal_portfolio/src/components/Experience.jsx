@@ -1,9 +1,6 @@
 import React from "react";
-import Dhruv from "../assets/Dhruv.jpg";
 import { motion } from "framer-motion";
 import Modal from "./Modal";
-import full from "../assets/full.png";
-import bottom from "../assets/Intersect.png";
 import LdcLogo from "../assets/macldc.png";
 import SesLogo from "../assets/ses.png";
 import MesLogo from "../assets/mesLogo.png";
@@ -32,16 +29,16 @@ const Experiences = () => {
         linksToView: [
           {
             name: "Website (In Progress)",
-            url: "https://macengldc.netlify.app",
+            url: "https://macengldc.ca",
           },
           {
             name: "Github",
             url: "https://github.com/Leadership-Dev-Conference-Committee/LDCC-Website-Official",
           },
-          {
-            name: "Portfolio",
-            url: "https://www.notion.so/Dhruv-Chokshi-85e16a82406f40eaa48235eaf8129a6c",
-          },
+          // {
+          //   name: "Portfolio",
+          //   url: "https://www.notion.so/Dhruv-Chokshi-85e16a82406f40eaa48235eaf8129a6c",
+          // },
         ],
         paragraph:
           <p>For the past five years, McMaster University – specifically the McMaster Engineering Society – has proudly hosted the Annual Leadership Development Conference. A conference providing upcoming engineering students the opportunity to acquire valuable skills, network and participate in discussions with professionals in the industry. <br /> <br />
@@ -132,30 +129,30 @@ const Experiences = () => {
             </p>      
         },
     },
-    // {
-    //   img: ScitechLogo,
-    //   title: "Teaching Assistant",
-    //   company: "TA of Math Dept.",
-    //   skills: ["Math", "Scratch Coding"],
-    //   date: "September 2022 - January 2023",
-    //   loc: "Chinguacousy Secondary School",
-    //   description: {
-    //     title: "Teaching Assistant of Grade 9-10 Math Department",
-    //     company: "Chinguacousy S.S. Math Department",
-    //     skills: ["Math", "Scratch Coding", "Communication"],
-    //     linksToView: [
-    //     ],
-    //     paragraph:
-    //       <p>As the Teaching Assistant for the grade 9/10 math department at Chinguacousy Secondary School, I assisted the teacher in carrying out instructions, marked tests, and worked closely with 25+ students to help them understand the provided material with greater efficiency. My role was ensuring that students remained focused during lessons and supported students one-on-one with clarifying any concepts when needed. <br/> <br/> 
+    {
+      img: ScitechLogo,
+      title: "Teaching Assistant",
+      company: "TA of Math Dept.",
+      skills: ["Math", "Scratch Coding"],
+      date: "September 2022 - January 2023",
+      loc: "Chinguacousy Secondary School",
+      description: {
+        title: "Teaching Assistant of Grade 9-10 Math Department",
+        company: "Chinguacousy S.S. Math Department",
+        skills: ["Math", "Scratch Coding", "Communication"],
+        linksToView: [
+        ],
+        paragraph:
+          <p>As the Teaching Assistant for the grade 9/10 math department at Chinguacousy Secondary School, I assisted the teacher in carrying out instructions, marked tests, and worked closely with 25+ students to help them understand the provided material with greater efficiency. My role was ensuring that students remained focused during lessons and supported students one-on-one with clarifying any concepts when needed. <br/> <br/> 
 
-    //       Additionally, during my spare period over the course of four months, I collaborated with a teacher and a grade 9 class in assisting them with various curriculum concepts and Scratch Coding to demonstrate the practical applications of what they were learning. <br/> <br/> 
+          Additionally, during my spare period over the course of four months, I collaborated with a teacher and a grade 9 class in assisting them with various curriculum concepts and Scratch Coding to demonstrate the practical applications of what they were learning. <br/> <br/> 
           
-    //       I also led additional support classes with students during lunchtime, assisting an average of 10-12 students with assignments and clarifying concepts.  <br/> <br/> 
+          I also led additional support classes with students during lunchtime, assisting an average of 10-12 students with assignments and clarifying concepts.  <br/> <br/> 
           
-    //       This role taught me immensely on the importance of effective communication and patience. 
-    //       </p>
-    //   },
-    // },
+          This role taught me immensely on the importance of effective communication and patience. 
+          </p>
+      },
+    },
     {
       img: BCHospital,
       title: "Hopspital Volunteer",

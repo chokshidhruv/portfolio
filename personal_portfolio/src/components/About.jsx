@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import DhruvImg from '../assets/Dhruv.jpg';
 import { AiOutlineExport } from "react-icons/ai";
@@ -58,7 +57,7 @@ const About = () => {
                     <div className='lg:flex hidden flex-col items-center gap-4'>
                         <img src={DhruvImg} alt='image of me' className='hidden lg:flex rounded-3xl w-80 h-80 border-4  border-blue-400' />
                         <div className='flex justify-center text-center gap-4'>
-                            <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} target='_blank' href='' className="bg-blue-400 text-slate-950 font-bold cursor-pointer uppercase tracking-wider flex items-center px-6 py-1 rounded-full text-md z-40">Resume</motion.a>
+                            <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} target='_blank' href='https://drive.google.com/file/d/1I-XB7Vlz9NEpZIwi27-XpDDtJs83VUiy/view?usp=sharing' className="bg-blue-400 text-slate-950 font-bold cursor-pointer uppercase tracking-wider flex items-center px-6 py-1 rounded-full text-md z-40">Resume</motion.a>
                             <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} target='_blank' href='https://www.notion.so/Dhruv-Chokshi-85e16a82406f40eaa48235eaf8129a6c' className="bg-slate-950 border-4 border-blue-400 text-blue-400 cursor-pointer font-bold uppercase tracking-wider flex items-center text-mf px-6 py-1 rounded-full z-40">Portfolio</motion.a>
                         </div>
                     </div>
@@ -74,7 +73,7 @@ const About = () => {
                         }   
                         <div className='flex lg:hidden justify-center text-center gap-4 mt-8'>
                             
-                            <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} target='_blank' href='' className="bg-blue-400 text-slate-950 font-bold cursor-pointer uppercase tracking-wider flex items-center px-6 py-1 rounded-full text-md z-40">Resume</motion.a>
+                            <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} target='_blank' href='https://drive.google.com/file/d/1I-XB7Vlz9NEpZIwi27-XpDDtJs83VUiy/view?usp=sharing' className="bg-blue-400 text-slate-950 font-bold cursor-pointer uppercase tracking-wider flex items-center px-6 py-1 rounded-full text-md z-40">Resume</motion.a>
                             <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} target='_blank' href='https://www.notion.so/Dhruv-Chokshi-85e16a82406f40eaa48235eaf8129a6c' className="bg-slate-950 border-4 border-blue-400 text-blue-400 cursor-pointer font-bold uppercase tracking-wider flex items-center text-mf px-6 py-1 rounded-full z-40">Portfolio</motion.a>
                         </div>
                     </div>
@@ -91,8 +90,8 @@ const About = () => {
                         </div>
                         <div className='w-full text-center grid items-start justify-center py-8 mt-2 border opacity-75 rounded-xl border-slate-900'>
                             <p className='text-xl font-semibold text-blue-400'>Relevant Coursework</p>
-                            <p className='text-lg font-normal px-3 pt-3 text-slate-400'>View All My Completed Courses (Available Soon!)</p>
-                            <a className='text-xl items-center flex justify-center py-3 hover:text-blue-500 cursor-pointer' href='#' ><AiOutlineExport /></a>
+                            <p className='text-lg font-normal px-3 pt-3 text-slate-400'>View All My Completed Courses </p>
+                            <a className='text-xl items-center flex justify-center py-3 hover:text-blue-500 cursor-pointer' href='https://drive.google.com/file/d/15U-hDd4Tol7TwR23BM2CLW7jvYge91YS/view?usp=sharing' ><AiOutlineExport /></a>
                         </div>
 
                     </section>
