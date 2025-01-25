@@ -29,26 +29,49 @@ import { SiMicrosoftexcel as Excel} from "react-icons/si";
 import { PiMicrosoftPowerpointLogoFill as PPT } from "react-icons/pi";
 import { PiMicrosoftWordLogo as Word} from "react-icons/pi";
 import { SiArduino as Arduino} from "react-icons/si";
+import { SiTypescript as TS} from "react-icons/si";
+import { SiGnubash as Bash } from "react-icons/si";
+import { SiLatex as Latex } from "react-icons/si";
+import { FaMarkdown as MDX } from "react-icons/fa";
+import { FaRProject as R } from "react-icons/fa";
+import { SiMongodb as MDB } from "react-icons/si";
+import { DiMysql as mySQL } from "react-icons/di";
+import { FaSass as Sass } from "react-icons/fa";
+import { SiExpress as Express } from "react-icons/si";
+import { SiApachemaven as Maven } from "react-icons/si";
 
 
 const Languages = [
     { Icon: CSS, alt: 'CSS' },
     { Icon: HTML, alt: 'HTML' },
+    { Icon: TS, alt: 'TS' },
     { Icon: JS, alt: 'JS' },
     { Icon: Python, alt: 'Python' },
     { Icon: CPP, alt: 'CPP' },
     { Icon: Java, alt: 'Java' },
+    { Icon: Bash, alt: 'Bash' },
+    { Icon: Latex, alt: 'Latex' },
+    { Icon: MDX, alt: 'MDX' },
+    { Icon: R, alt: 'R' },
 ];
 
 const FramLib = [
     { Icon: ReactIcon, alt: 'React' },
     { Icon: Tailwind, alt: 'Tailwind' },
     { Icon: Nodejs, alt: 'Nodejs' },
+    { Icon: Express, alt: 'Express' },
     { Icon: Bootstrap, alt: 'Bootstrap' },
     { Icon: Numpy, alt: 'Numpy' },
     { Icon: Framer, alt: 'Framer' },
     { Icon: Jquery, alt: 'Jquery' },
+    { Icon: Sass, alt: 'Sass' },
+]
 
+const DataBaseDevops = [
+    { Icon: Firebase, alt: 'Firebase' },
+    { Icon: MDB, alt: 'MongoDB' },
+    { Icon: mySQL, alt: 'mySQL' },
+    { Icon: Git, alt: 'Git' },
 ]
 
 const IDE = [
@@ -63,15 +86,14 @@ const IDE = [
 ]
 
 const Other = [
-    { Icon: Git, alt: 'Git' },
     { Icon: Github, alt: 'Github' },
-    { Icon: Firebase, alt: 'Firebase' },
     { Icon: Linux, alt: 'Linux' },
     { Icon: Windows, alt: 'Windows' },
     { Icon: Excel, alt: 'Excel' },
     { Icon: PPT, alt: 'Powerpoint' },
     { Icon: Word, alt: 'Word' },
     { Icon: Arduino, alt: 'Arduino' },
+    { Icon: Maven, alt: 'Maven' },
 
 ]
 
@@ -125,10 +147,22 @@ const Skills = () => {
             </div>
 
             <div className="grid place-items-start lg:flex w-full max-w-screen-lg py-5 gap-4 px-4 items-center bg-slate-900 opacity-75 rounded-xl border-slate-800">
-                <p className="sm:text-2xl text-xl font-semibold text-slate-400">Frameworks/Libraries:</p>
+                <p className="sm:text-2xl text-xl font-semibold text-slate-400">Frameworks & Libraries:</p>
                 <div className="grid grid-cols-5 xs:grid-cols-9 md:flex gap-5 sm:gap-10 place-items-center text-center justify-center">
                     {FramLib.map((framlib, index) => {
                         const Icon = framlib.Icon;
+                        return (
+                            <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} className='select-none'><Icon key={index} className="text-4xl flex font-normal text-blue-400" /></motion.div>
+                        )
+                    })}
+                </div>
+            </div>
+
+            <div className="grid place-items-start lg:flex w-full max-w-screen-lg py-5 gap-4 px-4 items-center bg-slate-900 opacity-75 rounded-xl border-slate-800">
+                <p className="sm:text-2xl text-xl font-semibold text-slate-400">Databases & DevOps:</p>
+                <div className="grid grid-cols-5 xs:grid-cols-9 md:flex gap-5 sm:gap-10 place-items-center text-center justify-center">
+                    {DataBaseDevops.map((dbdevops, index) => {
+                        const Icon = dbdevops.Icon;
                         return (
                             <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} className='select-none'><Icon key={index} className="text-4xl flex font-normal text-blue-400" /></motion.div>
                         )

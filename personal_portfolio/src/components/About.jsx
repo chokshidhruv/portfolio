@@ -85,13 +85,12 @@ const About = () => {
                             <p className='text-lg font-normal px-3 pt-3 text-slate-400'>McMaster University, BEng in Software Engineering (Co-op)</p>
                         </div>
                         <div className='w-full text-center grid items-start justify-center py-8 mt-2 border opacity-75 rounded-xl border-slate-900'>
-                            <p className='text-xl font-semibold text-blue-400'>Current cGPA</p>
-                            <p className='text-lg font-normal px-3 pt-3 text-slate-400'>10.4/12 (3.80/4.00)</p>
+                            <p className='text-xl font-semibold text-blue-400'>Coding Experience</p>
+                            <p className='text-lg font-normal px-3 pt-3 text-slate-400'>3 Years</p>
                         </div>
                         <div className='w-full text-center grid items-start justify-center py-8 mt-2 border opacity-75 rounded-xl border-slate-900'>
-                            <p className='text-xl font-semibold text-blue-400'>Relevant Coursework</p>
-                            <p className='text-lg font-normal px-3 pt-3 text-slate-400'>View All My Completed Courses </p>
-                            <a className='text-xl items-center flex justify-center py-3 hover:text-blue-500 cursor-pointer' href='https://drive.google.com/file/d/15U-hDd4Tol7TwR23BM2CLW7jvYge91YS/view?usp=sharing' ><AiOutlineExport /></a>
+                            <p className='text-xl font-semibold text-blue-400'>Guiding Principle</p>
+                            <p className='text-lg font-normal px-3 pt-3 text-slate-400'><i>What if it turns out better than you expect</i></p>
                         </div>
 
                     </section>
