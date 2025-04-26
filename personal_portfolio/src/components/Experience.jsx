@@ -11,9 +11,30 @@ import BCHospital from "../assets/bchospital.jpg";
 import AceLogo from "../assets/aceLogo.png";
 import ChingLogo from "../assets/chingLogo.png";
 import ScitechLogo from "../assets/scitech.jpg";
+import InfotechLogo from "../assets/Info-TechImg.jpeg";
 
 const Experiences = () => {
   const experienceList = [
+    {
+      img: InfotechLogo,
+      title: "Software Developer, Co-op",
+      company: "Info-Tech Research Group",
+      skills: ["Full-stack", "Ruby on Rails"],
+      date: "May 2025 - August 2025",
+      loc: "Toronto, ON",
+      description: {
+        title: "Software Developer, Co-op",
+        company: "Info-Tech Research Group",
+        skills: ["Full-stack", "Ruby on Rails"],
+        linksToView: [
+          {
+            name: "Website",
+            url: "https://www.infotech.com/",
+          },
+        ],   
+        paragraph: <p>Incoming, Summer 2025</p>
+    }
+    },
     {
       img: LdcLogo,
       title: "Website Developer Lead",
