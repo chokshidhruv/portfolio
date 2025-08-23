@@ -83,7 +83,7 @@ const Hero = () => {
                 <motion.p style={{y: text2Y}} variants={iconVariant(1/2)} initial={'hiddenOpp'} animate={'visible'} className="font-bold text-xl relative z-10 text-blue-300 uppercase">{`Hello! I'm`} </motion.p>
                 <motion.h1 style={{y: textY}} className="font-bold text-5xl md:text-8xl relative pb-4 pt-2 z-10" ><span className='text-blue-400' style={{textShadow:' 0rem 0.04rem #f8fcf9'}}
                 >Dhruv Chokshi</span></motion.h1>
-                <motion.p style={{y: text2Y}} variants={iconVariant(1/2)} initial={'hiddenOpp'} animate={'visible'} className="font-bold text-xl md:text-2xl relative z-10 mb-24 text-blue-300 uppercase">Incoming SWD @ Info-Tech Research Group</motion.p>
+                <motion.p style={{y: text2Y}} variants={iconVariant(1/2)} initial={'hiddenOpp'} animate={'visible'} className="font-bold text-xl md:text-2xl relative z-10 mb-24 text-blue-300 uppercase">SWD @ Info-Tech Research Group</motion.p>
                 <section className='grid gap-y-4 justify-center'>
                     
                     <motion.div className='flex z-50 text-center items-center justify-center gap-5 mb-8' variants={iconVariant(1/2)} initial={'hidden'} animate={'visible'}>
