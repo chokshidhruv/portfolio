@@ -13,10 +13,10 @@ const Footer = () => {
             name: 'Github',
             url: 'https://github.com/chokshidhruv'
         },
-        {
-            name: 'Instagram',
-            url: 'https://www.instagram.com/dhruvc05/'
-        },
+        // {
+        //     name: 'Instagram',
+        //     url: 'https://www.instagram.com/dhruvc05/'
+        // },
         {
             name: 'Linkedin',
             url: 'https://www.linkedin.com/in/chokshidhruv/'
@@ -55,7 +55,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                         >
                             {link.name === 'Github' && <FaGithub />}
-                            {link.name === 'Instagram' && <FaInstagram />}
+                            {/* {link.name === 'Instagram' && <FaInstagram />} */}
                             {link.name === 'Linkedin' && <FaLinkedin />}
                             {link.name === 'Email' && <MdEmail />}
                         </motion.a>
