@@ -14,7 +14,7 @@ const About = () => {
             <br/><br/>
             In the end, my goal is to connect programming with meaningful solutions that elicit a genuine difference in my community. I’m always looking for new opportunities to learn and grow, and I’m excited to see where my journey takes me next!
             <br/><br/>
-            If you’re interested in working together, I’m currently looking for a 4-month or a 12-month internship/co-op, please feel free to reach out!
+            If you’re interested in working together, I’m currently looking for a 4-month to 16-month internship/co-op, please feel free to reach out!
             </p>
         },
     ];
