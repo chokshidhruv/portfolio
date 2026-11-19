@@ -26,13 +26,14 @@ const About = () => (
         <div className="space-y-5 pt-6 text-lg leading-relaxed text-slate-400">
           <p>
             I&apos;m Dhruv, a Software Engineering student at McMaster and a software engineering
-            intern at <strong className="font-semibold text-slate-200">Wealthsimple</strong>. I like
-            building things people actually use, mostly with Rails, TypeScript and React, and lately
-            with LLMs.
+            intern at <strong className="font-semibold text-slate-200">Wealthsimple</strong>. I really
+            enjoy what I&apos;m doing right now, because the work I ship reaches millions of Canadians
+            and the money they depend on.
           </p>
           <p>
-            I got into tech through the SciTech program in high school, and caring about my community
-            through volunteering. Want to work together or just say hi?{" "}
+            That&apos;s what I&apos;ve cared about since high school, when I spent my time volunteering
+            at my local hospital, vaccine clinics and pharmacies because I wanted to make a real
+            difference in my community. Want to work together or just say hi?{" "}
             <a href="#contact" className="font-medium text-blue-400 underline underline-offset-4 hover:text-blue-300">
               Reach out
             </a>
