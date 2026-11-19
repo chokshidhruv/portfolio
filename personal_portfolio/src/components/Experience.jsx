@@ -40,7 +40,7 @@ const experienceList = [
       },
       {
         title: "Software Engineering Intern",
-        team: "Banking & Growth",
+        team: "Money Movement",
         date: "Jan 2027 – Apr 2027",
       },
     ],
