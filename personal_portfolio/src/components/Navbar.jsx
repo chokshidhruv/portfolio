@@ -1,135 +1,94 @@
-import React from 'react'
-import { motion } from "framer-motion"
-import { IoMenu } from "react-icons/io5";
-import { Link } from 'react-scroll'
-import Headroom from 'react-headroom';
+import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { IoMenu, IoClose } from "react-icons/io5";
+import { Link } from "react-scroll";
 
-const Navbar = () => { 
+export const navItems = [
+  { title: "About", link: "about-me" },
+  { title: "Experience", link: "experiences" },
+  { title: "Projects", link: "projects" },
+  { title: "Skills", link: "skills" },
+  { title: "Contact", link: "contact" },
+];
 
-    const [open, setOpen] = React.useState(false);
+const linkProps = { smooth: true, spy: true, duration: 900, offset: -40, activeClass: "is-active" };
 
-    const navItems = [
-        {
-            id: 'About-me', 
-            title: <h1>About</h1>,
-            link: 'about-me'
-        },
-        {
-            id: 'Experiences', 
-            title: <h1>Experience</h1>,
-            link: 'experiences'
-        },
-        {
-            id: 'Projects', 
-            title: <h1>Projects</h1>,
-            link: 'projects'
-        },
-        {
-            id: 'Skills', 
-            title: <h1>Skills</h1>,
-            link: 'skills'
-        },
-        {
-            id: 'Contact', 
-            title: <h1>Contact</h1>,
-            link: 'contact'
-        }
-    ]
+const Navbar = () => {
+  const [open, setOpen] = React.useState(false);
+  const close = () => setOpen(false);
 
-    const iconVariant = (duration) => ({
-        
-        hidden:{
-            y: 40,
-            opacity: 0,
-            scale: 0.5
-        },
-        visible:{
-            y: 0,
-            opacity: 1,
-            transition: {
-                duration
-            },
-            scale: 1.05,
-        }
+  return (
+    <header className="border-b border-slate-900 bg-slate-950/85 backdrop-blur-md">
+      <div className="mx-auto flex h-[72px] w-full max-w-screen-xl items-center justify-between px-6 sm:px-10">
+        <Link
+          to="home"
+          {...linkProps}
+          offset={0}
+          href="#home"
+          onClick={close}
+          className="cursor-pointer select-none uppercase tracking-wider text-slate-300"
+        >
+          Dhruv <span className="font-bold text-blue-400">Chokshi</span>
+        </Link>
 
-      })
+        <nav aria-label="Primary" className="hidden md:block">
+          <ul className="flex gap-8">
+            {navItems.map((item) => (
+              <li key={item.link}>
+                <Link
+                  to={item.link}
+                  {...linkProps}
+                  href={`#${item.link}`}
+                  className="nav-link relative cursor-pointer select-none py-2 text-sm font-medium text-slate-300 transition-colors hover:text-blue-300"
+                >
+                  {item.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
+        <button
+          type="button"
+          className="grid size-11 place-items-center rounded-lg text-2xl text-slate-300 md:hidden"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          onClick={() => setOpen((o) => !o)}
+        >
+          {open ? <IoClose /> : <IoMenu />}
+        </button>
+      </div>
 
-    const menuDrawer = {
-        opened: {
-            top: "100vh",
-            width: '100%',
-            height: '100%',
-            transition: {
-                duration: 0
-            },
-        },
-        
-        closed: {
-            x: -100,
-            top: '100%',
-            width: '100%',
-            height: '0%',
-            display: 'none',
-            transition: {
-                duration: 0
-            },
-            
-            zIndex: -1,
-        }
-    }
+      <AnimatePresence>
+        {open && (
+          <motion.nav
+            aria-label="Mobile"
+            className="overflow-hidden border-t border-slate-900 md:hidden"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <ul className="flex flex-col px-6 py-3">
+              {navItems.map((item) => (
+                <li key={item.link}>
+                  <Link
+                    to={item.link}
+                    {...linkProps}
+                    href={`#${item.link}`}
+                    onClick={close}
+                    className="block cursor-pointer py-3 text-base font-medium text-slate-300"
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.nav>
+        )}
+      </AnimatePresence>
+    </header>
+  );
+};
 
-
-
-    const [click, setClick] = React.useState(false); 
-    const closeMenu = () => setClick(false);
-
-    // export const [darkMode, setDarkMode] = React.useState(false);
-    // export const toggleDarkMode = () => {setDarkMode(!darkMode)};
-
-      return (
-        <Headroom><header className={`flex flex-col justify-center shadow-md shadow-slate-900`}>
-            <section className='flex flex-col justify-between px-10 py-8 bg-slate-950 w-full items-center'>
-                <div className='flex justify-between max-w-screen-2xl w-full z-500 items-center'>
-
-                    <motion.h1 className='text-slate-300 uppercase tracking-wider font-normal z-[999] select-none' variants={iconVariant(1/4)} initial="hidden" animate="visible" href="#home" >Dhruv 
-                    <Link to={'home'} activeClass="active" smooth={true} spy={true} duration={1000} offset={0} onClick={closeMenu} className='text-blue-400 font-bold tracking-wider cursor-pointer hover:font-extrabold hover:text-blue-500 active:text-blue-400 transition-[0.1]'> Chokshi</Link></motion.h1>
-                
-                    <ul className="md:flex gap-7 hidden">
-                    {
-                        navItems.map((item, i) => (
-                            <motion.li className="text-slate-300 font-medium hover:text-slate-400 active:text-slate-500 transition-[0.1]" key={item.id} variants={iconVariant(i/10)} initial="hidden" animate="visible" >
-                            {/* <a href={item.link}> {item.title}</a> */}
-                                <Link to={item.link} activeClass="active" smooth={true} spy={true} duration={1000} offset={-55} onClick={closeMenu} className='cursor-pointer select-none'>{item.title}</Link>
-                            </motion.li>
-                        ))
-                    }
-                    </ul>
-
-                    <motion.button className="flex md:hidden text-2xl" initial={true} animate={open ? 'opened' : 'closed'} onClick={() => setOpen((open) => !open)}><IoMenu /></motion.button>
-                    
-                </div>
-            </section>
-
-            <section className='flex flex-col justify-between md:hidden px-10 bg-slate-950 w-full items-center'>
-                <motion.div className='justify-between flex max-w-screen-2xl w-full items-end' variants={menuDrawer} initial={true} animate={open ? 'opened' : 'closed'}>
-                        <motion.ul className=" flex-col justify-start flex text-left -mt-2 pb-8">
-                        {
-                            navItems.map((item, i) => (
-                                <motion.li className="text-slate-300 font-medium py-2 hover:text-slate-400 active:text-slate-500" key={item.id} variants={iconVariant(i/3)} initial="hidden" animate="visible" >
-                                {/* <a href={item.link}> {item.title}</a> */}
-                                    <Link to={item.link} activeClass="active" smooth={true} spy={true} duration={1000} offset={-30} onClick={() => setOpen((open) => !open)} className='cursor-pointer select-none'>{item.title}</Link>
-                                </motion.li>
-                            ))
-                        }
-                        </motion.ul>
-                </motion.div>
-            </section>
-        
-        </header></Headroom>
-        
-      )
-
-}
-
-export default Navbar
+export default Navbar;

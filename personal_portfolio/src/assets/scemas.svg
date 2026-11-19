@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#0b1324"/>
+  <g stroke="#1e293b" stroke-width="1">
+    <path d="M40 80H360M40 130H360M40 180H360M40 230H360"/>
+  </g>
+  <path d="M40 200 L90 186 L130 192 L170 150 L210 162 L250 118 L290 128 L330 96 L360 104" fill="none" stroke="#60a5fa" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M290 128 L330 96 L360 104" fill="none" stroke="#93c5fd" stroke-width="3" stroke-dasharray="6 7" stroke-linecap="round"/>
+  <line x1="40" y1="110" x2="360" y2="110" stroke="#f87171" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <circle cx="330" cy="96" r="6" fill="#0b1324" stroke="#f87171" stroke-width="2.5"/>
+  <text x="40" y="58" font-family="'Space Grotesk', system-ui, sans-serif" font-weight="700" font-size="30" fill="#e2e8f0" letter-spacing="1">SCEMAS</text>
+</svg>

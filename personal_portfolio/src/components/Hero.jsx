@@ -1,130 +1,99 @@
-import { useRef } from 'react'
-import React from 'react'
-import { motion, useScroll, useTransform } from "framer-motion"
-import fullImage from '../assets/full.png'
-import bottomImage from '../assets/Intersect.png'
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { useRef } from "react";
+import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
-import { Link } from 'react-scroll'
-import fullImageSky from '../assets/Vector.png'
+import { Link } from "react-scroll";
+import fullImage from "../assets/full.png";
+import bottomImage from "../assets/Intersect.png";
 
+export const socialLinks = [
+  { name: "GitHub", url: "https://github.com/chokshidhruv", Icon: FaGithub },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/chokshidhruv/", Icon: FaLinkedin },
+  { name: "Email", url: "mailto:chokshid@mcmaster.ca", Icon: MdEmail },
+];
+
+const ease = [0.16, 1, 0.3, 1];
+const rise = (delay) => ({
+  initial: { opacity: 0, y: 18 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.9, delay, ease },
+});
 
 const Hero = () => {
+  const ref = useRef(null);
+  const reduce = useReducedMotion();
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", reduce ? "0%" : "60%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", reduce ? "0%" : "140%"]);
 
-    const ref = useRef(null);
-    const { scrollYProgress } = useScroll({target: ref, offset: ["start start", "end start"]});
+  return (
+    <header
+      ref={ref}
+      id="home"
+      className="relative grid h-[100svh] min-h-[560px] select-none place-items-center overflow-hidden px-6"
+    >
+      <div className="-mt-[22vh] flex flex-col items-center text-center">
+      <motion.div style={{ y: textY }} className="relative z-10 flex flex-col items-center">
+        <motion.p {...rise(0.1)} className="text-base font-semibold uppercase tracking-[0.2em] text-blue-300 md:text-lg">
+          Hello! I&apos;m
+        </motion.p>
+        <motion.h1
+          {...rise(0.2)}
+          className="pt-3 text-6xl font-bold tracking-tight text-blue-400 [text-wrap:balance] md:text-8xl"
+        >
+          Dhruv Chokshi
+        </motion.h1>
+        <motion.p {...rise(0.32)} className="pt-5 text-lg font-medium text-slate-300 md:text-2xl">
+          Software Engineering Intern <span className="text-blue-300">@ Wealthsimple</span>
+        </motion.p>
 
-    const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '70%']);
-    const textY = useTransform(scrollYProgress, [0, 1], ['0%', '170%']);
-    const text2Y = useTransform(scrollYProgress, [0, 1], ['0%', '500%']);
+      </motion.div>
+        <motion.div {...rise(0.45)} className="relative z-30 flex items-center gap-3 pt-10">
+          {socialLinks.map(({ name, url, Icon }) => (
+            <a
+              key={name}
+              href={url}
+              target={url.startsWith("mailto:") ? undefined : "_blank"}
+              rel="noopener noreferrer"
+              aria-label={name}
+              className="grid size-12 place-items-center rounded-full border border-blue-400/40 bg-slate-950/40 text-xl text-blue-300 backdrop-blur transition hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-400 hover:text-slate-950"
+            >
+              <Icon />
+            </a>
+          ))}
+        </motion.div>
+      </div>
 
-    const [click, setClick] = React.useState(false);
-    const closeMenu = () => setClick(false);
+      <Link
+        to="about-me"
+        smooth
+        duration={750}
+        offset={-40}
+        href="#about-me"
+        aria-label="Scroll to About"
+        className="absolute bottom-10 z-30 grid size-12 cursor-pointer place-items-center rounded-full text-2xl text-blue-300 transition-colors hover:text-blue-200 motion-safe:animate-bounce"
+      >
+        <IoIosArrowDown />
+      </Link>
 
-    const Links = [
-        {
-            name: 'Github',
-            url: 'https://github.com/chokshidhruv'
-        },
-        // {
-        //     name: 'Instagram',
-        //     url: 'https://www.instagram.com/dhruvc05/'
-        // },
-        {
-            name: 'Linkedin',
-            url: 'https://www.linkedin.com/in/chokshidhruv/'
-        },
-        {
-            name: 'Email',
-            url: 'mailto:dhruvchokshi005@gmail.com'
-        }
-    ];
-
-    const iconVariant = (duration) => ({
-        
-        hidden:{
-            y: 0,
-            opacity: 0,
-            scale: 1,
-            x: -500,
-        },
-        hiddenOpp:{
-            y: 0,
-            opacity: 0,
-            scale: 1,
-            x: 500,
-        },
-        hiddenY:{
-            y: -500,
-            opacity: 0,
-        },
-        visible:{
-            y: 0,
-            opacity: 1,
-            transition: {
-                duration
-            },
-            scale: 1,
-            x:0
-        }
-
-      })
-      // <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className="bg-blue-400 text-slate-950 font-bold uppercase tracking-wider px-6 py-2 rounded-full z-40">Resume</motion.a>
-      // <motion.a variants={iconVariant(1/3)} initial={'hiddenOpp'} animate={'visible'} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className="bg-slate-950 border-4 border-blue-400 text-blue-400 font-bold uppercase tracking-wider px-6 py-2 rounded-full z-40">Portfolio</motion.a>
-
-    return (
-        <>
-        <div ref={ref} className="w-[full] h-screen overflow-hidden relative grid place-items-center px-8 select-none" id='home'>
-
-            <div className='text-center pt-10'>
-                <motion.p style={{y: text2Y}} variants={iconVariant(1/2)} initial={'hiddenOpp'} animate={'visible'} className="font-bold text-xl relative z-10 text-blue-300 uppercase">{`Hello! I'm`} </motion.p>
-                <motion.h1 style={{y: textY}} className="font-bold text-5xl md:text-8xl relative pb-4 pt-2 z-10" ><span className='text-blue-400' style={{textShadow:' 0rem 0.04rem #f8fcf9'}}
-                >Dhruv Chokshi</span></motion.h1>
-                <motion.p style={{y: text2Y}} variants={iconVariant(1/2)} initial={'hiddenOpp'} animate={'visible'} className="font-bold text-xl md:text-2xl relative z-10 mb-24 text-blue-300 uppercase">Prev SWD @ Info-Tech Research Group</motion.p>
-                <section className='grid gap-y-4 justify-center'>
-                    
-                    <motion.div className='flex z-50 text-center items-center justify-center gap-5 mb-8' variants={iconVariant(1/2)} initial={'hidden'} animate={'visible'}>
-
-                    {Links.map((link, index) => (
-                                <motion.a
-                                    key={index}
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    className="bg-blue-400 text-slate-950 font-bold uppercase tracking-wider p-3 rounded-full z-40 text-xl cursor-pointer"
-                                    href={link.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    {link.name === 'Github' && <FaGithub />}
-                                    {/* {link.name === 'Instagram' && <FaInstagram />} */}
-                                    {link.name === 'Linkedin' && <FaLinkedin />}
-                                    {link.name === 'Email' && <MdEmail />}
-                                </motion.a>
-                                ))}
-
-
-                    </motion.div>
-
-                </section>
-                <div className= 'flex z-50 text-center items-center justify-center p-4'>
-                    <Link to="about-me" activeClass="active" smooth={true} spy={true} duration={750} offset={-50} onClick={closeMenu} className="bg-black animate-bounce text-blue-400 font-bold uppercase tracking-wider p-6 text-2xl rounded-full z-40 cursor-pointer"><IoIosArrowDown /></Link>
-                </div>
-
-            </div>
-
-
-            <motion.img style={{y: backgroundY}} src={fullImage} className='w-full h-screen bg-cover bg-bottom inset-0 z-0 absolute' alt="full" />
-            <motion.img style={{y: backgroundY}} src={fullImageSky} className='w-full h-[screen] bg-cover bg-bottom hidden inset-0 z-0 absolute' alt="full" />
-
-
-            <img src={bottomImage} className='w-full h-screen bg-cover bg-bottom inset-0 z-20 absolute' alt="full" />
-
-        </div>
-        </>
-    );
-}
+      <motion.img
+        style={{ y: backgroundY }}
+        src={fullImage}
+        alt=""
+        aria-hidden="true"
+        draggable="false"
+        className="absolute inset-0 z-0 h-full w-full object-cover object-bottom"
+      />
+      <img
+        src={bottomImage}
+        alt=""
+        aria-hidden="true"
+        draggable="false"
+        className="absolute inset-0 z-20 h-full w-full object-cover object-bottom"
+      />
+    </header>
+  );
+};
 
 export default Hero;
