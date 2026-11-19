@@ -27,10 +27,7 @@ const projectList = [
             company: 'Real-time environmental monitoring for city operators',
             date: 'Next.js · React · TypeScript · Tailwind · Vitest',
             linksToView: [],
-            paragraph: <>
-                <p>A real-time environmental monitoring platform for city operators, admins and the public. I led the admin and predictive-alerting features, delivering sensor-to-dashboard updates in 0.75ms p50 against a 5s requirement.</p>
-                <p>I built a regression-based forecasting engine that predicts threshold breaches five minutes ahead from live sensor data and recommends rules admins can approve in one click, so operators can act before a problem hits. Underneath it is a 12-agent hierarchical PAC architecture with event-driven pub/sub, dependency injection and a singleton composition root, keeping ingestion, alerting, forecasting and audit loosely coupled.</p>
-            </>
+            paragraph: <p>A real-time environmental monitoring platform for city operators. I led the admin tools and predictive alerting, which forecasts problems from live sensor data before they happen.</p>
         },
     },
         {

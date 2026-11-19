@@ -31,23 +31,10 @@ const experienceList = [
         team: "Money Movement, then Banking & Growth",
         date: "Sep 2026 – Apr 2027",
         body: (
-          <>
-            <p>
-              On Money Movement, I shipped an automated forced-withdrawal pipeline for income-fund
-              accounts in Ruby on Rails and Sidekiq. It runs a cron-scheduled notification-to-execution
-              flow and is projected to cut manual Ops intervention by 98%, from 35,000 accounts a year
-              to 500. Alongside it I built four Braze client-notification workflows, backed by 78+
-              RSpec tests and five Rails maintenance tasks that run each workflow end to end, with logs
-              tracked in Datadog.
-            </p>
-            <p>
-              I also drove the migration of a mobile-only flow to web for millions of eligible clients
-              (React Native to React), shipping zero unintended UI changes across 4,000+ screen states,
-              and co-built a Claude Code skill that finds and repairs invalid tests, removing 80% of
-              false positives and raising team coverage from 4% to 15%. In January I move to the
-              Banking &amp; Growth team for the rest of the term.
-            </p>
-          </>
+          <p>
+            Building backend and web features on the Money Movement team in Ruby on Rails and React,
+            moving to Banking &amp; Growth in January.
+          </p>
         ),
       },
     ],
@@ -68,12 +55,8 @@ const experienceList = [
         date: "May 2026 – Aug 2026",
         body: (
           <p>
-            Engineered production LLM prompt pipelines on the Claude API that turn each client's own
-            data into department performance and trend analytics for CIOs, serving 30,000+ clients
-            and validated against a 5% hallucination threshold. I designed Cube.js semantic-layer
-            models and SQL transformations over MS Fabric data across a 500+ table schema, and cut one
-            dashboard section's API calls from six to one by consolidating hardcoded per-category
-            queries into a single grouped query, removing 185 lines of duplicated configuration.
+            Built LLM-powered analytics for CIOs on the Claude API, along with the data models and SQL
+            behind the client dashboards.
           </p>
         ),
       },
@@ -83,12 +66,7 @@ const experienceList = [
         date: "May 2025 – Aug 2025",
         body: (
           <p>
-            Built a Rails import dashboard on a third-party REST API that parses raw responses into
-            structured errors and employee data for 1,000+ records per import, cutting support tickets
-            by 60%. I brought dashboard latency down 42% (780ms to 450ms) by removing N+1
-            ActiveRecord queries, indexing frequently queried columns and lazy-loading heavy frontend
-            components, and raised test coverage from 53% to 75% with 200+ RSpec tests, replacing
-            false-positive stubs with integration tests built on fakes.
+            Built and sped up Rails dashboards for survey data, and grew the test suite around them.
           </p>
         ),
       },
