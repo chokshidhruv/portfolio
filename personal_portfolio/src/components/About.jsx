@@ -1,5 +1,4 @@
 import DhruvImg from "../assets/Dhruv.jpg";
-import { FiArrowUpRight } from "react-icons/fi";
 import { Section } from "./ui";
 
 const facts = [
@@ -18,39 +17,27 @@ const About = () => (
           draggable="false"
           className="size-48 select-none rounded-3xl border-2 border-blue-400/70 object-cover sm:size-64 lg:size-72"
         />
-        <a
-          href="https://www.notion.so/Dhruv-Chokshi-85e16a82406f40eaa48235eaf8129a6c"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 rounded-full border border-blue-400/60 px-5 py-1.5 text-sm font-semibold uppercase tracking-wider text-blue-400 transition-colors hover:bg-blue-400 hover:text-slate-950"
-        >
-          Portfolio <FiArrowUpRight aria-hidden="true" />
-        </a>
       </div>
 
       <div className="max-w-[65ch]">
         <h2 className="text-4xl font-bold tracking-tight text-blue-400 md:text-5xl">
           <span className="text-slate-400">About </span>Me
         </h2>
-        <div className="space-y-5 pt-8 text-base leading-relaxed text-slate-400 md:text-[1.0625rem]">
+        <div className="space-y-5 pt-6 text-lg leading-relaxed text-slate-400">
           <p>
-            I&apos;m Dhruv, a Software Engineering student at McMaster University, currently interning
-            at <strong className="font-semibold text-slate-200">Wealthsimple</strong>. Before that I
-            spent two summers at Info-Tech Research Group, first on Rails backends for Survey Insights
-            and then building LLM-powered analytics for CIOs.
+            I&apos;m Dhruv, a Software Engineering student at McMaster and a software engineering
+            intern at <strong className="font-semibold text-slate-200">Wealthsimple</strong>. I like
+            building things people actually use, mostly with Rails, TypeScript and React, and lately
+            with LLMs.
           </p>
           <p>
-            I like work where the impact is easy to point to: fewer manual hours for an ops team, a
-            faster dashboard, a test suite people can trust. Most days that means Ruby on Rails,
-            TypeScript and React, and more and more, building with LLMs.
+            I got into tech through the SciTech program in high school, and caring about my community
+            through volunteering. Want to work together or just say hi?{" "}
+            <a href="#contact" className="font-medium text-blue-400 underline underline-offset-4 hover:text-blue-300">
+              Reach out
+            </a>
+            .
           </p>
-          <p>
-            It started in the Regional SciTech program at Chinguacousy Secondary School, and in the
-            time I spent volunteering at my local hospital, vaccine clinics and pharmacies. The goal
-            hasn&apos;t changed since: connect programming with solutions that make a real difference
-            for people.
-          </p>
-          <p>If you&apos;d like to work together or just want to say hi, feel free to reach out!</p>
         </div>
       </div>
     </div>

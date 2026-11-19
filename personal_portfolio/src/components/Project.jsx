@@ -286,8 +286,7 @@ const projectList = [
                     url: 'https://github.com/chokshidhruv/Get-A-Grip'
                     },
                 ],
-                paragraph: <p>A collaborative project that was divided into two subgroups: computing and modelling. In the computing subgroup, my team and I worked together to identify the objectives, constraints, and requirements for a design solution. This served as the foundation for developing a program that interfaces with the Quanser Interactive Labs environment. The program was designed to sequentially identify specific containers and place them in their designated autoclave locations. This transfer process was repeated for six different containers, in a randomly selected order.
-                    <br/> <br/>View full description of the project <a className='text-blue-400 underline' href='https://www.notion.so/PROJECT-2-GET-A-GRIP-2242ece2ebc1443aa0726885e8bf17a1'>here!</a></p>
+                paragraph: <p>A collaborative project that was divided into two subgroups: computing and modelling. In the computing subgroup, my team and I worked together to identify the objectives, constraints, and requirements for a design solution. This served as the foundation for developing a program that interfaces with the Quanser Interactive Labs environment. The program was designed to sequentially identify specific containers and place them in their designated autoclave locations. This transfer process was repeated for six different containers, in a randomly selected order.</p>
             },
         },
         {
@@ -302,8 +301,7 @@ const projectList = [
                 date: 'Course: Engineering 1P13',
                 linksToView: [
                 ],
-                paragraph: <p>The project focused on renewable technology, specifically windmills. The objective was to select the most suitable material for wind turbine blades based on specific design requirements such as mechanical properties & performance. Working collaboratively in a group of five, I gained experience identifying objectives, utilizing a material selection process, and creating a solid turbine blade model.
-                    <br/><br/>View full description of the project <a className='text-blue-400 underline' href='https://www.notion.so/PROJECT-1-RENEWABLE-TECHNOLOGY-4120415ac133465c86b1c84a6a104651'>here!</a></p>
+                paragraph: <p>The project focused on renewable technology, specifically windmills. The objective was to select the most suitable material for wind turbine blades based on specific design requirements such as mechanical properties & performance. Working collaboratively in a group of five, I gained experience identifying objectives, utilizing a material selection process, and creating a solid turbine blade model.</p>
             },
         },
         {

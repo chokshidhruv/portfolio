@@ -28,12 +28,13 @@ const experienceList = [
     roles: [
       {
         title: "Software Engineering Intern",
-        team: "Money Movement, then Banking & Growth",
+        team: "Money Movement",
         date: "Sep 2026 – Apr 2027",
         body: (
           <p>
-            Building backend and web features on the Money Movement team in Ruby on Rails and React,
-            moving to Banking &amp; Growth in January.
+            I&apos;m on Money Movement, the team behind every deposit, withdrawal and transfer, the
+            plumbing that gets clients&apos; money into, out of and across their Wealthsimple accounts.
+            I work across the Rails backend and the React web app.
           </p>
         ),
       },
@@ -55,8 +56,9 @@ const experienceList = [
         date: "May 2026 – Aug 2026",
         body: (
           <p>
-            Built LLM-powered analytics for CIOs on the Claude API, along with the data models and SQL
-            behind the client dashboards.
+            On CIO Analytics, I worked on the data side of the dashboards IT leaders use to see how
+            their departments are doing. That meant modelling the data with SQL and Cube.js, and using
+            the Claude API to turn it into plain-language insights.
           </p>
         ),
       },
@@ -66,7 +68,9 @@ const experienceList = [
         date: "May 2025 – Aug 2025",
         body: (
           <p>
-            Built and sped up Rails dashboards for survey data, and grew the test suite around them.
+            On Survey Insights, I worked on the Rails app that brings client survey and employee data
+            into Info-Tech&apos;s products. Most of my summer went to making it faster and better
+            tested, and to learning how a large production Rails codebase is run.
           </p>
         ),
       },
