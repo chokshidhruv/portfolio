@@ -31,8 +31,9 @@ const About = () => (
           </p>
           <p>
             Before all this, I spent a lot of high school volunteering at my local hospital, vaccine
-            clinics and pharmacies, mostly because I wanted to help out in my community. Always happy
-            to chat, so{" "}
+            clinics and pharmacies, mostly because I wanted to help out in my community. So I&apos;m
+            really grateful to now work on things that, directly or indirectly, support millions of
+            Canadians every day. Always happy to chat, so{" "}
             <a href="#contact" className="font-medium text-blue-400 underline underline-offset-4 hover:text-blue-300">
               feel free to reach out
             </a>
