@@ -29,7 +29,7 @@ const experienceList = [
       {
         title: "Software Engineering Intern",
         team: "Money Movement",
-        date: "Sep 2026 – Apr 2027",
+        date: "Sep 2026 – Dec 2026",
         body: (
           <p>
             I&apos;m on Money Movement, the team behind every deposit, withdrawal and transfer, the
@@ -37,6 +37,11 @@ const experienceList = [
             I work across the Rails backend and the React web app.
           </p>
         ),
+      },
+      {
+        title: "Software Engineering Intern",
+        team: "Banking & Growth",
+        date: "Jan 2027 – Apr 2027",
       },
     ],
   },
