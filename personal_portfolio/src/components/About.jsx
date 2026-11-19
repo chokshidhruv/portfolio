@@ -25,17 +25,16 @@ const About = () => (
         </h2>
         <div className="space-y-5 pt-6 text-lg leading-relaxed text-slate-400">
           <p>
-            I&apos;m Dhruv, a Software Engineering student at McMaster and a software engineering
-            intern at <strong className="font-semibold text-slate-200">Wealthsimple</strong>. I really
-            enjoy what I&apos;m doing right now, because the work I ship reaches millions of Canadians
-            and the money they depend on.
+            I&apos;m Dhruv, a Software Engineering student at McMaster. Right now I&apos;m interning at{" "}
+            <strong className="font-semibold text-slate-200">Wealthsimple</strong> on Money Movement,
+            the team behind how money gets into, out of and between Wealthsimple accounts.
           </p>
           <p>
-            That&apos;s what I&apos;ve cared about since high school, when I spent my time volunteering
-            at my local hospital, vaccine clinics and pharmacies because I wanted to make a real
-            difference in my community. Want to work together or just say hi?{" "}
+            Before all this, I spent a lot of high school volunteering at my local hospital, vaccine
+            clinics and pharmacies, mostly because I wanted to help out in my community. Always happy
+            to chat, so{" "}
             <a href="#contact" className="font-medium text-blue-400 underline underline-offset-4 hover:text-blue-300">
-              Reach out
+              feel free to reach out
             </a>
             .
           </p>
